@@ -1,42 +1,404 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body class="test">
-		<div>faffafafafsfsdfsfdsds</div>
-		
-		<header class="header">
-    <div class="container">
-        <div class="header__row">
-            <div class="logo">Logo</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
-        </div>
-    </div>
-</header>
-<div class="mobile-nav">
-	<ul class="mobile-nav__list">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#!">Services</a></li>
-		<li><a href="#!">About</a></li>
-		<li><a href="#!">Projects</a></li>
-		<li><a href="#!">Contact</a></li>
-	</ul>
-</div>
 
-		<footer class="footer">
-	<div class="container">
-		<h2>Footer</h2>
-	</div>
-</footer>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Скважина</title>
 
-		<script src="./js/index.bundle.js"></script>
-	</body>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script defer src="./js/index.bundle.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+	<!-- header -->
+	<header class="header">
+		<div class="header__top">
+			<div class="container header__container">
+				<a href="#">
+					<img class="header__logo" src="" alt="Логотип aquaremont24.ru">
+				</a>
+
+				<span class="header__alarm-text">текст с предложение</span>
+
+				<button class="header__call-btn --call-form-open">Заказать звонок</button>
+
+				<a class="header__tel" href="tel:+7(456) 456-8989">SVG +7(456) 456-8989</a>
+			</div>
+		</div>
+
+		<div class="header__bottom">
+			<div class="container header__container">
+
+				<!-- burger -->
+				<button class="burger header__burger" id="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+
+				<nav class="nav header__nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
+						<li class="nav__item"><a class="nav__link" href="#gallery">Услуги</a></li>
+						<li class="nav__item"><a class="nav__link" href="#catalog">Отзывы</a></li>
+						<li class="nav__item"><a class="nav__link" href="#events">Работы</a></li>
+						<li class="nav__item"><a class="nav__link" href="#project-partners">О нас</a></li>
+						<li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<button class="header__call-btn --call-form-open">Заказать звонок</button>
+
+			</div>
+		</div>
+	</header>
+
+
+	<main>
+
+
+
+		<!-- Hero -->
+		<section class="hero">
+			<div class="container hero__container">
+
+				<span class="tagline hero__tagline">
+					Работаем там, где другим не подсилу
+				</span>
+
+				<h1 class="hero__heading">
+					Ремонт, чистка, обслуживаение скважин Москвы и
+					Московской области
+				</h1>
+
+				<ul class="hero__list">
+					<li class="hero__item">Работаем на совесть - качесвтенно и с гарантией</li>
+					<li class="hero__item">Полный спектр услуг по ремонту скважин</li>
+					<li class="hero__item">Человеческий подход к каждому клиенту</li>
+				</ul>
+
+				<button class="hero__btn">Сделать заказ</button>
+
+
+			</div>
+		</section>
+
+		<!-- предложение -->
+		<section class="offer">
+
+			<div class="container offer__container">
+
+				<div class="offer__box">
+
+					<div class="offer__discount">
+						<img src="" alt="акция на услуги">
+						<p class="offer__discount-text">Скидка 30% на все услуги при первом заказе !</p>
+					</div>
+
+					<div class="offer__form">
+						<img src="" alt="консультация">
+						<p class="offer__form-text">Получите бесплатную консультацию специалиста</p>
+						<button class="offer__form-btn">Получить консультацию</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+
+
+		<!-- приимущества -->
+		<section class="achievements">
+			<div class="container achievements__container">
+
+				<ul class="achievements__list">
+					<li class="achievements__item">
+						<span class="achievements__top-text">Опты работы</span>
+						<h3 class="achievements__digital">10+</h3>
+						<span class="achievements__bottom-text">лет</span>
+					</li>
+
+					<li class="achievements__item">
+						<span class="achievements__top-text">Выполнили более</span>
+						<h3 class="achievements__digital">1000+</h3>
+						<span class="achievements__bottom-text">заказов</span>
+					</li>
+
+					<li class="achievements__item">
+						<span class="achievements__top-text">Работаем</span>
+						<h3 class="achievements__digital">24/7</h3>
+						<span class="achievements__bottom-text">по всей Москве и МО</span>
+					</li>
+
+					<li class="achievements__item">
+						<span class="achievements__top-text">Гарантируем</span>
+						<h3 class="achievements__digital">100%</h3>
+						<span class="achievements__bottom-text">качество</span>
+					</li>
+
+				</ul>
+
+			</div>
+		</section>
+
+		<!-- прайс -->
+		<section class="price">
+			<div class="container price__container">
+
+				<span class="tagline price__tagline">
+					Самые низкие
+				</span>
+
+				<h2 class="heading price__heading">Наши цены</h2>
+
+				<ul class="price__list">
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Выезд мастера и диагностика</span>
+						<span class="price__cost">от 5 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
+						<span class="price__cost">от 3 500 ₽</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!-- услуги -->
+
+		<section class="service">
+
+			<div class="container service__container">
+
+				<span class="tagline service__tagline">Качественное выполнение работ</span>
+				<h2 class="heading service__heading">Наши услуги</h2>
+
+				<p class="service__discriptions">Наша компания специализируется на предоставлении широкого спектра услуг
+					по ремонту, обслуживанию, чистке и обустройству скважин. Мы имеем большой опыт работы в этой области
+					и предоставляем высококачественные услуги нашим клиентам.
+
+					Наша команда профессиональных ремонтных бригад оснащена всем необходимым оборудованием и
+					инструментами для проведения ремонтных работ любой сложности. Мы готовы предложить нашим клиентам
+					следующие услуги:
+				</p>
+
+
+				<ul class="service__list">
+
+					<li class="service__item">
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+
+						<article class="service-card">
+							<h3 class="service-card__heading">Ремонт скважин на воду зимой</h3>
+							<p class="service-card__discriptions">Извлекем застрявший или упавший насос из скважины</p>
+							<span class="service-card__cost">от 3000 руб</span>
+							<a class="service-card__link" href="">Подробнее</a>
+						</article>
+
+
+
+
+						<article class="service-card-offer">
+							<h3 class="service-card-offer__heading">Мы лучьшие по ремонту скважин
+								бл блаб ла</h3>
+							<button class="service-card-offer__btn">Оставить заявку</button>
+						</article>
+
+
+					</li>
+
+
+				</ul>
+
+
+
+
+			</div>
+
+		</section>
+
+		<section class="steps">
+
+		</section>
+
+		<section class="work">
+
+		</section>
+
+
+
+		<section class="reviews">
+
+		</section>
+
+
+		<section class="requisition">
+
+		</section>
+
+
+		<section class="about">
+
+		</section>
+
+
+		<section class="information">
+
+		</section>
+
+		<section class="contacts">
+
+		</section>
+
+
+		<section class="service-area">
+
+		</section>
+
+
+	</main>
+
+	<footer class="footer">
+
+	</footer>
+
+
+
+</body>
+
 </html>
+
+
 
