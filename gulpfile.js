@@ -1,5 +1,9 @@
 const gulp = require('gulp');
 
+// convert fonts
+// fonts ttf in woff2
+const ttf2woff2 = require('gulp-ttf2woff2');
+
 // Tasks
 require('./gulp/dev.js');
 require('./gulp/docs.js');
@@ -21,3 +25,19 @@ gulp.task(
 		gulp.parallel('server:docs')
 	)
 );
+
+
+gulp.task('convert-fonts', function (done) {
+		gulp.src('./src/fonts/src/*.ttf')
+		// это если нужно woff
+		// .pipe(fonter({
+		// 	formats: ['woff', 'ttf']
+		// }))
+		// .pipe(src('./src/fonts/*.ttf'))
+		.pipe(ttf2woff2())
+		.pipe(gulp.dest('./src/fonts/'))
+		done();
+});
+
+
+

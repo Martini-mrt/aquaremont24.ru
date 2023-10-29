@@ -7,3 +7,62 @@ body {
 	color: var(--text-color);
     font-family: var(--font-main);
 }
+
+
+.container {
+	margin: 0 auto;
+	padding-left: 13px;
+	padding-right: 13px;
+	max-width: 1140px;
+  }
+
+
+//   @media (max-width: 1140px) {
+// 	.container {
+	
+// 	}
+//   }
+  
+  @media (max-width: 768px) {
+	.container {
+	
+	}
+  }
+  /* 350 */
+  @media (max-width: 414px) {
+	.container {
+	
+	}
+  
+  }
+
+
+
+
+// 
+  .tagline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--colorBlack);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tagline::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 20px;
+    background-color: var(--colorBlack);
+} 
+
+// btn
+.btn {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: var(--colorPrimaryBlue);
+}

@@ -1,0 +1,114 @@
+.hero {
+    position: relative;
+    
+    width: 100%;
+    // height: 500px;
+
+
+    background-image: url(../img/hero-1920.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+// накладываем слой
+.hero::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #02172D;
+    opacity: 0.64;
+}
+
+.hero__container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 134px;
+}
+
+.hero__tagline {
+    color: var(--colorWhite);
+}
+
+.hero__tagline::before {
+    background-color: var(--colorWhite);
+}
+
+
+
+.hero__heading {
+    z-index: 1;
+    margin-bottom: 34px;
+    max-width: 653px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 64px;
+    color: var(--colorWhite);
+}
+
+.hero__heading-marker {
+    color: var(--colorPrimaryYellow);
+}
+
+.hero__list {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 55px;
+    list-style: disc;
+    color: var(--colorGrey);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero__item {
+    list-style-position: inside;
+}
+
+.hero__btn {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--colorBlack);
+  background-color: var(--colorPrimaryYellow);
+ 
+}
+
+.hero__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    object-fit:cover;
+    // height: clamp(100%, 5vw, 50%);
+    height: 100%;
+}
+
+
+
+
+
+
+// фоны для картинки  второй способ
+// <div class="image">
+// 	<div class="image-text">Затемнение фона</div>
+// </div>
+
+// .image {
+// 	position: relative;
+// 	width: 100%;    
+// 	height: 420px;
+// 	background: 
+// 		linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.8)), 
+// 		url(https://snipp.ru/demo/560/image.jpeg);
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// 	background-position: top;    
+// }

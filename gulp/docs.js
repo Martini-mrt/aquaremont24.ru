@@ -3,7 +3,7 @@ const gulp = require('gulp');
 // HTML
 const fileInclude = require('gulp-file-include');
 const htmlclean = require('gulp-htmlclean');
-const webpHTML = require('gulp-webp-html');
+// const webpHTML = require('gulp-webp-html');
 
 // SASS
 const sass = require('gulp-sass')(require('sass'));
@@ -15,7 +15,7 @@ const csso = require('gulp-csso');
 // const cssnano = require('gulp-cssnano');
 
 
-const webpCss = require('gulp-webp-css');
+// const webpCss = require('gulp-webp-css');
 
 // Server
 const browserSync = require('browser-sync').create();
@@ -63,10 +63,10 @@ const plumberNotify = (title) => {
 gulp.task('html:docs', function () {
 	return gulp
 		.src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
-		.pipe(changed('./docs/'))
+		.pipe(changed('./docs/', { hasChanged: changed.compareContents }))
 		.pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
-		.pipe(webpHTML())
+
 		.pipe(htmlclean())
 		.pipe(gulp.dest('./docs/'));
 });
@@ -79,7 +79,7 @@ gulp.task('sass:docs', function () {
 		// .pipe(sourceMaps.init())
 		.pipe(autoprefixer())
 		.pipe(sassGlob())
-		.pipe(webpCss())
+
 		.pipe(groupMedia())
 		.pipe(sass())
 
@@ -106,7 +106,7 @@ gulp.task('images:docs', function () {
 
 gulp.task('fonts:docs', function () {
 	return gulp
-		.src('./src/fonts/**/*')
+		.src('./src/fonts/*.*',)
 		.pipe(changed('./docs/fonts/'))
 		.pipe(gulp.dest('./docs/fonts/'));
 });
@@ -138,10 +138,10 @@ gulp.task('js:docs', function () {
 // });
 
 // browserSync server
-gulp.task('server:docs', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./docs"
-        }
-    });
+gulp.task('server:docs', function () {
+	browserSync.init({
+		server: {
+			baseDir: "./docs"
+		}
+	});
 });

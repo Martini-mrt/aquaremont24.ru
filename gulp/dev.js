@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+
 const fileInclude = require('gulp-file-include');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
@@ -7,6 +8,8 @@ const sassGlob = require('gulp-sass-glob');
 const browserSync = require('browser-sync').create();
 // const server = require('gulp-server-livereload');
 
+// fonts ttf in woff2
+const ttf2woff2 = require('gulp-ttf2woff2');
 
 const clean = require('gulp-clean');
 const fs = require('fs');
@@ -52,7 +55,7 @@ gulp.task('html:dev', function () {
 			.pipe(fileInclude(fileIncludeSetting))
 			.pipe(gulp.dest('./build/'))
 			.pipe(browserSync.stream())
-	
+
 	);
 });
 
@@ -73,20 +76,20 @@ gulp.task('sass:dev', function () {
 
 gulp.task('images:dev', function () {
 	return gulp
-	.src('./src/img/**/*')
-	.pipe(changed('./docs/img/'))
-	.pipe(webp())
-	.pipe(gulp.dest('./docs/img/'))
-	.pipe(gulp.src('./src/img/**/*'))
-	.pipe(changed('./docs/img/'))
-	.pipe(imagemin({ verbose: true }))
-	.pipe(gulp.dest('./docs/img/'))
-	.pipe(browserSync.stream())
+		.src('./src/img/**/*')
+		.pipe(changed('./build/img/'))
+		.pipe(webp())
+		.pipe(gulp.dest('./build/img/'))
+		.pipe(gulp.src('./src/img/**/*'))
+		.pipe(changed('./build/img/'))
+		.pipe(imagemin({ verbose: true }))
+		.pipe(gulp.dest('./build/img/'))
+		.pipe(browserSync.stream())
 });
 
 gulp.task('fonts:dev', function () {
 	return gulp
-		.src('./src/fonts/**/*')
+		.src('./src/fonts/*.*',)
 		.pipe(changed('./build/fonts/'))
 		.pipe(gulp.dest('./build/fonts/'))
 		.pipe(browserSync.stream())
@@ -97,6 +100,9 @@ gulp.task('files:dev', function () {
 		.src('./src/files/**/*')
 		.pipe(changed('./build/files/'))
 		.pipe(gulp.dest('./build/files/'))
+
+
+
 		.pipe(browserSync.stream())
 });
 
@@ -125,12 +131,12 @@ gulp.task('js:dev', function () {
 
 
 // browserSync server
-gulp.task('server:dev', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./build"
-        }
-    });
+gulp.task('server:dev', function () {
+	browserSync.init({
+		server: {
+			baseDir: "./build"
+		}
+	});
 });
 
 
