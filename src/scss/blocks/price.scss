@@ -1,0 +1,43 @@
+.price {
+    padding: 30px 0 30px 0;
+}
+
+.price__container {}
+
+.tagline {}
+
+.price__tagline {}
+
+.price__heading {
+    margin-bottom: 32px;
+}
+
+.price__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.price__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border-bottom: 1px dotted var(--colorPrimaryBlue);
+
+    background-color: #E4EFFC;
+
+}
+
+.price__discriptions {
+    // font-size: 15px;
+    font-weight: 600;
+}
+
+.price__cost {
+    // font-size: 15px;
+    font-weight: 600;
+}

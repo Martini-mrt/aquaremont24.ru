@@ -6,6 +6,8 @@ body {
 	background-color: var(--page-bg);
 	color: var(--text-color);
     font-family: var(--font-main);
+    font-size: var(--baseFontSise);
+    font-weight: 400;
 }
 
 
@@ -56,6 +58,12 @@ body {
     width: 20px;
     background-color: var(--colorBlack);
 } 
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
 
 // btn
 .btn {
