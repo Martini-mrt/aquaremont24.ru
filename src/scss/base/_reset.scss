@@ -36,6 +36,11 @@ a:visited {
 	outline: none;
 }
 
+a {
+	color: inherit;
+}
+
+
 a:hover {
 	text-decoration: none;
 }
@@ -73,6 +78,9 @@ ul {
 img {
 	vertical-align: top;
 	display: block;
+	max-width: 100%;
+	height: auto;
+	// object-fit: cover;
 }
 
 img,

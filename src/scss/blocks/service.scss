@@ -2,58 +2,230 @@
     padding: 30px 0 30px 0;
 }
 
-.service__container {
-}
+.service__container {}
 
-.service__tagline {
-}
+.service__tagline {}
 
 .service__heading {
     margin-bottom: 32px;
 }
+
 .service__discriptions {
     margin-bottom: 32px;
     max-width: 950px;
 }
+
 .service__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 28px;
     column-gap: 24px;
 }
-.service__item {
-    
-}
+
+.service__item {}
+
 .service-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: 32px 28px;
-
+    padding-top: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 21px;
+    min-height: 324px;
     border-radius: 25px;
-    // background-color: var(--colorPrimaryBlue);
-    background-color: rgba(8, 45, 83, 0.90);
 
-// !test
-    height: 350px;
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.8);
+
+    background:
+        // общий слой
+        radial-gradient(at top left, rgb(8, 45, 83, 0.9) 100%, #ffffff00 100%),
+        url('.././img/cart.webp');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+     
+
+    &:hover {
+       
+
+    }
+
+
+    &:hover::before,
+    &:active::before,
+    &:focus::before {
+        opacity: 0.2;
+    }
+
+    &:hover .service-card__text-details,
+    &:active .service-card__text-details,
+    &:focus .service-card__text-details {
+        color: var(--colorPrimaryYellow);
+    }
 }
+
+
+
+
+
+// .service-card-decor::before  {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background-image: url('./../img/new-subtract.svg');
+//     background-repeat: no-repeat;
+//     background-position: bottom right;
+//     // background-position-y: 101%;
+//     // background-position-x: 101%;
+//     opacity: 0.1;
+// }
+
+.service-card-decor::before  {
+        content: "";
+        position: absolute;
+        inset: 0;
+        
+        background: 
+        radial-gradient(at top left, rgba(255, 255, 255, 0) 74%, #0000000d 76%, rgba(255, 255, 255, 1) 76.3%);
+
+
+     
+
+
+        // background-position-y: 101%;
+        // background-position-x: 101%;
+        opacity: 0.1;
+    }
+
+
+
+
+
+
+
+
+.service-card::before {
+    transition: opacity .1s;
+}
+
+
+
+.service-card::after {
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    right: 138px;
+    width: 42px;
+    height: 42px;
+    background-image: url(.././img/circle.svg);
+    background-repeat: no-repeat;
+}
+
 .service-card__heading {
-    margin-bottom: 25px;
+    position: relative;
+    margin-bottom: 32px;
+    // max-width: 190px;
     font-size: 20px;
     font-weight: 600;
     color: var(--colorWhite);
 }
+
 .service-card__discriptions {
+    position: relative;
+    max-width: 190px;
+    margin-bottom: 10px;
+
     color: var(--colorWhite);
 }
+
 .service-card__cost {
+    position: relative;
+    margin-top: auto;
     color: var(--colorWhite);
 }
-.service-card__link {
-    color: var(--colorWhite);
+
+.service-card__cost-bold {
+    font-weight: 600;
 }
+
+.service-card__text-details {
+    // margin-top: auto;
+    position: relative;
+    text-decoration: underline;
+    text-align: right;
+    text-underline-offset: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--colorWhite);
+    // color: #fff4d6;
+    transition: color .3s;
+}
+
+
+
+
+
+
+
 .service-card-offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // align-items: center;
+    padding: 34px;
+    height: 100%;
+    border-radius: 25px;
+    background-color: var(--colorPrimaryYellow);
+
+
+    
+
+
+//    background: 
+   
+//    radial-gradient(at top left, var(--colorPrimaryYellow) 74%, #444444 76%, #FFE190 76%),
+   
+//    radial-gradient(at top left, var(--colorPrimaryYellow) 74%, #f6cb56 76%),
+//    radial-gradient(at top left, var(--colorPrimaryYellow) 100%, #ffffff00 100%);
+// #fee9b18c
+
+
+   background: 
+   radial-gradient(at top left, rgba(255, 255, 0, 0) 74%, #0000000d 76%, rgba(255, 255, 255, 0.2) 76%), 
+
+   radial-gradient(at top left, var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 100%)
+   ;
+
 }
+
+
+
+
+
+
+
+
 .service-card-offer__heading {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
 }
+
 .service-card-offer__btn {
+    position: relative;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    border-radius: 25px;
+    background: #082D53;
+    color: var(--colorWhite); 
+    font-weight: 600;
+    font-size: 15px;
+
+
+
 }
+
