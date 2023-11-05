@@ -1,0 +1,30 @@
+.information {
+    padding: 64px 0;
+    background-color: var(--colorBg);
+}
+
+.information__container {
+    // display: flex;
+    // flex-direction: column;
+}
+
+.information__tagline {
+}
+
+.information__heading {
+    margin-bottom: 16px;
+}
+
+
+.information__btn-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+
+.information__btn {
+    text-transform: uppercase;
+    color: var(--colorWhite);
+  background-color: var(--colorPrimaryBlue);
+}

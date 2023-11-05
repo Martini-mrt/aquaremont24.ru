@@ -1,0 +1,23 @@
+.service-area {
+    padding: 64px 0;
+    background-color: var(--colorPrimaryBlue);
+    color: var(--colorWhite);
+}
+
+.service-area__container {
+}
+
+.service-area__heading {
+    margin-bottom: 32px;
+}
+.service-area__list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 12px;
+    column-gap: 8px;
+    color: #ffffff88;
+}
+.service-area__item {
+}
+.service-area__link {
+}

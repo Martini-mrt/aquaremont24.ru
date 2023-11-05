@@ -1,0 +1,149 @@
+.footer {
+
+    background-color: var(--colorPrimaryBlue);
+
+    color: var(--colorWhite);
+    // margin-bottom: 50px;
+}
+
+.footer__container-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px 0;
+    border-top: 1px solid var(--colorWhite-3);
+    border-bottom: 1px solid var(--colorWhite-3);
+
+}
+
+.footer__left {
+    width: 30%;
+}
+
+.footer__logo {
+    margin-bottom: 24px;
+}
+
+.footer__discriptions {
+    font-weight: 600;
+}
+
+
+
+// .footer__center {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 33%;
+// }
+// .footer__nav-heading {
+//     margin-bottom: 8px;
+//     font-size: 20px;
+//     font-weight: 600;
+// }
+// .footer__list {
+//     display: grid;
+//     gap: 8px;
+// }
+// .footer__item {
+// }
+// .footer__link {
+// }
+
+
+
+
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 20%;
+}
+
+
+.footer__heading-call {
+    margin-bottom: 4px;
+}
+
+.footer__tel {
+    margin-bottom: 24px;
+    color: var(--colorWhite);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer__tel-svg {
+    margin-right: 10px;
+}
+
+.footer__tel-svg path {
+    fill: currentColor;
+}
+
+
+.footer__question {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer__btn {
+    margin-bottom: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--colorPrimaryYellow);
+
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    // max-width: 190px;
+    width: 100%;
+}
+
+.footer__social-item {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.footer__social-link {
+
+}
+
+
+.footer__social-link-svg {
+    fill: #D9D9D9;
+    transition: fill .3s;
+}
+
+
+.footer__social-item:hover  .footer__social-link-svg {
+    /* background-color: #757470; */
+    fill: var(--colorPrimaryYellow);
+}
+
+
+
+
+
+.footer__container-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    color: var(--colorWhite-2);
+    font-size: 12px;
+}
+
+.footer__copyr {
+    display: block;
+}
+
+.footer__police-link {
+    display: block;
+    text-decoration: underline;
+}

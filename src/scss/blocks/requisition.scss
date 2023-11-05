@@ -1,0 +1,122 @@
+.requisition {
+    padding: 64px 0;
+    background-color: var(--colorGrey-3);
+}
+
+.requisition__container {
+    display: flex;
+    // justify-content: space-between;
+    gap: 50px;
+}
+
+//   ###### left
+.requisition__wrap-left {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+
+    width: 100%;
+    // height: 100%;
+    // background-color: #a4ff95;
+}
+
+
+
+
+
+.requisition__heading {
+    // margin-bottom: auto;
+    // margin-bottom: auto;
+}
+
+
+.requisition__form {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 40px 42px;
+    margin-top: auto;
+
+    
+
+    // height: 179px;
+    border-radius: 25px;
+    background-color: var(--colorWhite);
+}
+
+.requisition__input {
+    padding: 18px 24px;
+    color: var(--colorBlack);
+    border-radius: 25px;
+    background-color: var(--colorBg);
+}
+
+.requisition__textaria {
+    padding: 18px 24px;
+    color: var(--colorBlack);
+    border-radius: 25px;
+    background-color: var(--colorBg);
+    resize: none;
+}
+
+.requisition__input::placeholder {
+    color: var(--colorGrey-2);
+}
+
+.requisition__textaria::placeholder {
+    color: var(--colorGrey-2);
+}
+
+.requisition__btn {
+    color: var(--colorWhite);
+    background-color: var(--colorPrimaryBlue);
+}
+
+.requisition__text-policy {
+    font-size: 10px;
+}
+
+.requisition__policy-link {
+    text-decoration: underline;
+    color: var(--colorPrimaryYellow);
+}
+
+//   ###### right
+.requisition__wrap-right {
+
+    display: flex;
+    flex-direction: column;
+    padding: 40px 21px;
+
+    min-height: 700px;
+    // max-width: 388px;
+    width: 100%;
+    border-radius: 25px;
+    // background-color: antiquewhite;
+
+    background-image: url('.././img/form-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+
+}
+
+.requisition__box-message {
+    margin-top: auto;
+    padding: 28px 32px;
+    border-radius: 25px;
+    background-color: var(--colorPrimaryYellow);
+}
+
+.requisition__heading-message {
+    margin-bottom: 18px;
+    color: var(--colorBlack);
+    font-size: 30px;
+    font-weight: 700;
+    color: #111;
+    line-height: 30px;
+
+    
+}
+
+.requisition__text-message {}
