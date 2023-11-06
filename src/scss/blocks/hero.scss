@@ -77,6 +77,17 @@
   font-weight: 600;
   color: var(--colorBlack);
   background-color: var(--colorPrimaryYellow);
+  transition: color, background-color .2s;
+
+  &:hover,
+    &:focus {
+        background-color: var(--colorHoverBtn);
+    }
+
+    &:active {
+        // color: var(--colorWhite);
+        background-color: var(--colorHoverBtn2);
+    }
  
 }
 

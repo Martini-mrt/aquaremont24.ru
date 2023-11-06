@@ -25,6 +25,7 @@
 }
 
 .footer__discriptions {
+    margin-bottom: 16px;
     font-weight: 600;
 }
 
@@ -63,7 +64,7 @@
 
 
 .footer__heading-call {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .footer__tel {
@@ -71,6 +72,11 @@
     color: var(--colorWhite);
     font-size: 20px;
     font-weight: 600;
+    transition: color .2s;
+    &:hover,
+    &:focus {
+        color: var(--colorPrimaryYellow);
+    }
 }
 
 .footer__tel-svg {
@@ -83,21 +89,31 @@
 
 
 .footer__question {
+    margin-bottom: 16px;
+    margin-top: auto;
     display: block;
-    margin-bottom: 8px;
 }
 
 .footer__btn {
-    margin-bottom: 24px;
     font-weight: 700;
     text-transform: uppercase;
     background-color: var(--colorPrimaryYellow);
+    transition: color, background-color .2s;
+
+    &:hover,
+    &:focus {
+        background-color: var(--colorHoverBtn);
+    }
+
+    &:active {
+        background-color: var(--colorHoverBtn2);
+    }
 
 }
 
 .footer__social-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     // max-width: 190px;
     width: 100%;
@@ -117,7 +133,7 @@
 
 
 .footer__social-link-svg {
-    fill: #D9D9D9;
+    fill: var(--colorGrey);
     transition: fill .3s;
 }
 

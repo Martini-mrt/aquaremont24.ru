@@ -37,6 +37,17 @@
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
+    transition: background-color .1s;
+
+    &:hover,
+    &:focus {
+        background-color: var(--colorHoverBtn);
+    }
+
+    &:active {
+        background-color: var(--colorHoverBtn2);
+    }
+
 }
 
 .--call-form-open {}
@@ -45,17 +56,23 @@
     color: var(--colorPrimaryBlue);
     font-size: 20px;
     font-weight: 600;
+    transition: color .1s;
+
+    &:hover,
+    &:focus {
+        color: var(--colorSecondaryBlue);
+    }
 }
 
 .header__tel-svg {
-   margin-right: 10px;
-   
+    margin-right: 10px;
+
 }
 
 .header__tel-svg path {
     fill: currentColor;
- }
- 
+}
+
 
 
 
@@ -65,17 +82,13 @@
     background-color: var(--colorBg);
 }
 
-.header__container-bottom {
-    
-}
+.header__container-bottom {}
 
 .--bottom-call-btn {
     display: none;
 }
 
-.burger {
-    
-}
+.burger {}
 
 .header__burger {
     display: none;
@@ -83,9 +96,9 @@
 
 
 .nav {
-  display: flex;  
-  justify-content: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .header__nav {}
@@ -102,12 +115,52 @@
 
 }
 
-.nav__item {
-
-}
+.nav__item {}
 
 .nav__link {
+    position: relative;
+    border: solid 1px transparent;
     color: var(--colorBlack);
     font-size: inherit;
     font-weight: inherit;
+
+    transition: color .2s;
+
+
+    &:hover,
+    &:focus {
+        color: var(--colorSecondaryBlue);
+    }
+
+    &:active {
+        color: #ffbb00;
+    }
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        transform: scale(0, 1);
+        transition: transform .2s;
+        background: var(--colorBlack);
+        transform-origin: center top;
+    }
+
+
+    &.nav__link--active:after {
+        transform: scale(1, 1);
+    }
+
+
+    &:hover:after,
+    &:hover:focus {
+        transform: scale(1, 1);
+    }
+
+
+
 }

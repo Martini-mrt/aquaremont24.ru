@@ -24,6 +24,21 @@
 
 .service__item {}
 
+
+.service__link {
+
+    &:hover .service-card::before,
+    &:focus .service-card::before {
+        opacity: 0.2;
+    }
+
+    &:hover .service-card .service-card__text-details,
+    &:focus .service-card .service-card__text-details {
+        color: var(--colorPrimaryYellow);
+    }
+}
+
+
 .service-card {
     position: relative;
     display: flex;
@@ -35,7 +50,7 @@
     min-height: 324px;
     border-radius: 25px;
 
-    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 
     background:
         // общий слой
@@ -45,25 +60,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-     
+    // &:hover::before {
+    //     opacity: 0.2;
+    // }
 
-    &:hover {
-       
-
-    }
-
-
-    &:hover::before,
-    &:active::before,
-    &:focus::before {
-        opacity: 0.2;
-    }
-
-    &:hover .service-card__text-details,
-    &:active .service-card__text-details,
-    &:focus .service-card__text-details {
-        color: var(--colorPrimaryYellow);
-    }
+    // &:hover .service-card__text-details {
+    //     color: var(--colorPrimaryYellow);
+    // }
 }
 
 
@@ -82,33 +85,21 @@
 //     opacity: 0.1;
 // }
 
-.service-card-decor::before  {
-        content: "";
-        position: absolute;
-        inset: 0;
-        
-        background: 
+.service-card-decor::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
         radial-gradient(at top left, rgba(255, 255, 255, 0) 74%, #0000000d 76%, rgba(255, 255, 255, 1) 76.3%);
-
-
-     
-
-
-        // background-position-y: 101%;
-        // background-position-x: 101%;
-        opacity: 0.1;
-    }
-
-
-
-
-
-
-
-
-.service-card::before {
+    // background-position-y: 101%;
+    // background-position-x: 101%;
+    opacity: 0.1;
     transition: opacity .1s;
 }
+
+// .service-card::before {
+
+// }
 
 
 
@@ -178,35 +169,12 @@
     padding: 34px;
     height: 100%;
     border-radius: 25px;
-    background-color: var(--colorPrimaryYellow);
-
-
-    
-
-
-//    background: 
-   
-//    radial-gradient(at top left, var(--colorPrimaryYellow) 74%, #444444 76%, #FFE190 76%),
-   
-//    radial-gradient(at top left, var(--colorPrimaryYellow) 74%, #f6cb56 76%),
-//    radial-gradient(at top left, var(--colorPrimaryYellow) 100%, #ffffff00 100%);
-// #fee9b18c
-
-
-   background: 
-   radial-gradient(at top left, rgba(255, 255, 0, 0) 74%, #0000000d 76%, rgba(255, 255, 255, 0.2) 76%), 
-
-   radial-gradient(at top left, var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 100%)
-   ;
-
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    // background-color: var(--colorPrimaryYellow);
+    background:
+        radial-gradient(at top left, rgba(255, 255, 0, 0) 74%, #0000000d 76%, rgba(255, 255, 255, 0.2) 76%),
+        radial-gradient(at top left, var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 100%);
 }
-
-
-
-
-
-
-
 
 .service-card-offer__heading {
     position: relative;
@@ -221,11 +189,19 @@
     width: 100%;
     border-radius: 25px;
     background: #082D53;
-    color: var(--colorWhite); 
+    color: var(--colorWhite);
     font-weight: 600;
     font-size: 15px;
 
+    transition: background-color .1s;
 
+    &:hover,
+    &:focus {
+        background-color: var(--colorSecondaryBlue);
+    }
+
+    &:active {
+        background-color: var(--colorSecondaryBlue2);
+    }
 
 }
-

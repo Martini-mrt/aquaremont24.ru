@@ -15,9 +15,14 @@
     grid-template-columns: repeat(4,1fr);
     row-gap: 12px;
     column-gap: 8px;
-    color: #ffffff88;
+    color: var(--colorGrey);
 }
 .service-area__item {
 }
 .service-area__link {
+    transition: color .2s;
+    &:hover,
+    &:focus {
+        color: var(--colorPrimaryYellow);
+    }
 }

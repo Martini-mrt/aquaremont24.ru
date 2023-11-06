@@ -2,18 +2,58 @@
     padding: 64px 0;
     background-color: var(--colorWhite);
     // !test
-    height: 500px;
+    // height: 500px;
 }
 
 .work__container {
+   
 }
-.tagline {
-}
+
 .work__tagline {
 }
-.heading {
-}
+
 .work__heading {
+    margin-bottom: 40px;
 }
-.work__swiper-box {
+
+
+.work__slider-box {
+    
 }
+
+
+
+
+
+
+
+
+.work__swiper {
+    padding: 0 24px;
+    width: 100%;
+    // высота задатся от картинок
+  height: 100%;
+    // background-color: #faaaaa;
+}
+
+
+
+
+
+.work__swiper-slide {
+  width: 500px;
+  height: 200px;
+  
+//   background-color: #c6faaa;
+
+}
+
+.work__swiper-slide-img {
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.work__swiper-pagination {
+  
+}
+

@@ -7,8 +7,6 @@
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.contacts__container {
-}
 .contacts__list {
     display: flex;
     justify-content: space-between;
@@ -51,6 +49,16 @@
     background-position: center;
 }
 
+.contacts__link {
+    transition: color .2s;
+    &:hover,
+    &:focus {
+        color: var(--colorPrimaryYellow);
+    }
+}
+
+
+
 .contacts__img {
     width: 45px;
     height: 45px ;
@@ -61,4 +69,6 @@
 .contacts__text {
     
 }
+
+
 

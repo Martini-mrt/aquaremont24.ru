@@ -27,4 +27,14 @@
     text-transform: uppercase;
     color: var(--colorWhite);
   background-color: var(--colorPrimaryBlue);
+  transition: color, background-color .2s;
+
+  &:hover,
+  &:focus {
+      background-color: var(--colorSecondaryBlue);
+  }
+
+  &:active {
+      background-color: var(--colorSecondaryBlue2);
+  }
 }

@@ -54,12 +54,12 @@
 
 				<nav class="nav header__nav">
 					<ul class="nav__list">
-						<li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
-						<li class="nav__item"><a class="nav__link" href="#gallery">Услуги</a></li>
-						<li class="nav__item"><a class="nav__link" href="#catalog">Отзывы</a></li>
-						<li class="nav__item"><a class="nav__link" href="#events">Работы</a></li>
-						<li class="nav__item"><a class="nav__link" href="#project-partners">О нас</a></li>
-						<li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+						<li class="nav__item"><a class="nav__link" href="#price">Цены</a></li>
+						<li class="nav__item"><a class="nav__link" href="#service">Услуги</a></li>
+						<li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
+						<li class="nav__item"><a class="nav__link" href="#work">Работы</a></li>
+						<li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+						<li class="nav__item"><a class="nav__link" href="#service-area">Территория обслуживания</a></li>
 					</ul>
 				</nav>
 
@@ -168,7 +168,7 @@
 		</section>
 
 		<!-- прайс -->
-		<section class="price">
+		<section class="price" id="price">
 			<div class="container price__container">
 
 				<span class="tagline price__tagline">
@@ -221,7 +221,7 @@
 
 		<!-- услуги -->
 
-		<section class="service">
+		<section class="service" id="service">
 
 			<div class="container service__container">
 
@@ -398,7 +398,7 @@
 
 		</section>
 
-		<section class="work">
+		<section class="work" id="work">
 			<div class="container work__container">
 
 
@@ -406,16 +406,64 @@
 				<h2 class="heading work__heading">Наши работы</h2>
 
 
-				<div class="work__swiper-box">
+
+
+
+
+               <div class="slider-box work__slider-box">
+				<button class="arrows work__arrows-left">
+					<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
+						</svg>
+				</button>
+
+
+				<!-- Slider main container -->
+				<div class="swiper work__swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide work__swiper-slide">
+							<img class="work__swiper-slide-img" src="./img/1.webp" loading="lazy" alt="картинка недавние работы">
+						</div>
+						<div class="swiper-slide work__swiper-slide">
+							<img class="work__swiper-slide-img" src="./img/2.webp" loading="lazy" alt="картинка недавние работы">
+						</div>
+						<div class="swiper-slide work__swiper-slide">
+							<img class="work__swiper-slide-img" src="./img/3.webp" loading="lazy" alt="картинка недавние работы">
+						</div>
+						<div class="swiper-slide work__swiper-slide">
+							<img class="work__swiper-slide-img" src="./img/1.webp" loading="lazy" alt="картинка недавние работы">
+						</div>
+						<div class="swiper-slide work__swiper-slide">
+							<img class="work__swiper-slide-img" src="./img/2.webp" loading="lazy" alt="картинка недавние работы">
+						</div>
+						<div class="swiper-slide work__swiper-slide">
+							<img class="work__swiper-slide-img" src="./img/3.webp" loading="lazy" alt="картинка недавние работы">
+						</div>
+
+					</div>
 
 				</div>
 
+
+				<button class="arrows revert-arrows work__arrows-right">
+					<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
+						</svg>
+				</button>
+
+
+
+			</div>
+                  <!-- If we need pagination -->
+					<div class="swiper-pagination work__swiper-pagination"></div>
 			</div>
 		</section>
 
 
 
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container reviews__container">
 
 
@@ -423,9 +471,77 @@
 				<h2 class="heading reviews__heading">Отзывы клиентов</h2>
 
 
-				<div class="reviews__swiper-box">
+				
 
+				<div class="slider-box reviews__swiper-box">
+					<button class="arrows reviews__arrows-left">
+						<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
+							</svg>
+					</button>
+	
+	
+					<!-- Slider main container -->
+					<div class="swiper reviews__swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+							<div class="swiper-slide reviews__swiper-slide">
+								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
+							</div>
+	
+						</div>
+	
+					</div>
+	
+	
+					<button class="arrows revert-arrows reviews__arrows-right">
+						<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
+							</svg>
+					</button>
+	
+	
+	
 				</div>
+					  <!-- If we need pagination -->
+						<div class="swiper-pagination reviews__swiper-pagination"></div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
 
 			</div>
 
@@ -476,7 +592,7 @@
 		</section>
 
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container about__container">
 				<span class="tagline about__tagline">Работаем там,где другим не подсилу</span>
 				<h2 class="heading about__heading">О нас</h2>
@@ -572,14 +688,14 @@
 					<li class="contacts__item">
 						<div class="contacts__img contacts__img--mail">
 						</div>
-						<span class="contacts__text">Email: <a class="bold"
+						<span class="contacts__text">Email: <a class="bold contacts__link"
 								href="mailto:max@mail.ru">max@mail.ru</a></span>
 					</li>
 
 					<li class="contacts__item">
 						<div class="contacts__img contacts__img--call">
 						</div>
-						<span class="contacts__text">Телефон: <a class="bold"
+						<span class="contacts__text">Телефон: <a class="bold contacts__link"
 								href="tel:+7-915-88-99">+7-915-88-99</a></span>
 					</li>
 
@@ -589,7 +705,7 @@
 		</section>
 
 
-		<section class="service-area">
+		<section class="service-area" id="service-area">
 
 			<div class="container service-area__container">
 				<h2 class="heading service-area__heading">Территория обслуживания</h2>
@@ -633,24 +749,28 @@
 					<li class="service-area__item"><a class="service-area__link" href="http://">Ногинский район</a></li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Одинцовский район</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Орехово-Зуевский</a>
-						район</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Павлово-Посадский</a>
-						район</li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Орехово-Зуевский
+							район</a>
+					</li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Павлово-Посадский
+							район</a>
+					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Подольский район</a>
 					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Пушкинский район</a>
 					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Раменский район</a></li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Рузский район</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Сергиево-Посадский</a>
-						район</li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Сергиево-Посадский
+							район</a>
+					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Серпуховский район</a>
 					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Сходня</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Солнечногорский</a>
-						район</li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Солнечногорский
+							район</a>
+					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Ступинский район</a>
 					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Химкинский район</a>
@@ -668,34 +788,11 @@
 		<div class="container footer__container-top">
 
 			<div class="footer__left">
-				<img class="footer__logo" src="./img/logo-w.svg" alt="логотип акваремонт 24">
+				<img class="footer__logo" src="./img/logo-w.svg" loading="lazy" alt="логотип акваремонт 24">
 				<p class="footer__discriptions">
 					Ремонт, обслуживание скважин любой сложности.
 					Качественно, быстро круглосуточно!
 				</p>
-			</div>
-
-			<!-- <nav class="footer__center">
-				<h3 class="footer__nav-heading">Навигация</h3>
-				<ul class="footer__list">
-                  <li class="footer__item"><a class="footer__link" href="http://"></a>Цены</li>
-				  <li class="footer__item"><a class="footer__link" href="http://"></a>Услуги</li>
-				  <li class="footer__item"><a class="footer__link" href="http://"></a>О нас</li>
-				</ul>
-			</nav> -->
-
-			<div class="footer__right">
-				<h3 class="footer__heading-call">Рабаотаем круглосуточно</h3>
-
-				<a class="footer__tel" href="tel:+7(456) 456-8989">
-					<svg class="footer__tel-svg" width="14" height="16" viewBox="0 0 14 16"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M13.4721 11.7424L11.5379 9.50953C10.8471 8.71208 9.67277 9.03109 9.39645 10.0677C9.18922 10.7855 8.49843 11.1842 7.87672 11.0247C6.49515 10.626 4.63003 8.5526 4.28464 6.87796C4.0774 6.16023 4.49187 5.36279 5.11358 5.12358C6.0116 4.80461 6.28792 3.44895 5.59713 2.6515L3.66293 0.418659C3.1103 -0.139553 2.28136 -0.139553 1.79781 0.418659L0.485319 1.9338C-0.827173 3.52869 0.623476 7.75515 3.87017 11.5031C7.11686 15.2511 10.778 17.0055 12.1596 15.4106L13.4721 13.8955C13.9557 13.2575 13.9557 12.3006 13.4721 11.7424Z" />
-					</svg>+7(456) 456-8989</a>
-
-				<span class="footer__question">Остались вопросы?</span>
-				<button class="btn footer__btn">мы поможем</button>
 
 				<ul class="footer__social-list">
 					<li class="footer__social-item">
@@ -731,6 +828,32 @@
 							</svg>
 						</a></li>
 				</ul>
+
+			</div>
+
+			<!-- <nav class="footer__center">
+				<h3 class="footer__nav-heading">Навигация</h3>
+				<ul class="footer__list">
+                  <li class="footer__item"><a class="footer__link" href="http://"></a>Цены</li>
+				  <li class="footer__item"><a class="footer__link" href="http://"></a>Услуги</li>
+				  <li class="footer__item"><a class="footer__link" href="http://"></a>О нас</li>
+				</ul>
+			</nav> -->
+
+			<div class="footer__right">
+				<h3 class="footer__heading-call">Рабаотаем круглосуточно</h3>
+
+				<a class="footer__tel" href="tel:+7(456) 456-8989">
+					<svg class="footer__tel-svg" width="14" height="16" viewBox="0 0 14 16"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M13.4721 11.7424L11.5379 9.50953C10.8471 8.71208 9.67277 9.03109 9.39645 10.0677C9.18922 10.7855 8.49843 11.1842 7.87672 11.0247C6.49515 10.626 4.63003 8.5526 4.28464 6.87796C4.0774 6.16023 4.49187 5.36279 5.11358 5.12358C6.0116 4.80461 6.28792 3.44895 5.59713 2.6515L3.66293 0.418659C3.1103 -0.139553 2.28136 -0.139553 1.79781 0.418659L0.485319 1.9338C-0.827173 3.52869 0.623476 7.75515 3.87017 11.5031C7.11686 15.2511 10.778 17.0055 12.1596 15.4106L13.4721 13.8955C13.9557 13.2575 13.9557 12.3006 13.4721 11.7424Z" />
+					</svg>+7(456) 456-8989</a>
+
+				<span class="footer__question">Остались вопросы?</span>
+				<button class="btn footer__btn">мы поможем</button>
+
+
 			</div>
 		</div>
 
