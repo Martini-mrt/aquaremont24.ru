@@ -7,9 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Скважина</title>
 
+
+	<!-- fonts  -->
+	<link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+
+
 	<link rel="stylesheet" href="./css/main.css" />
 
 	<script defer src="./js/index.bundle.js"></script>
+
+
 
 </head>
 
@@ -21,14 +30,12 @@
 	<!-- header -->
 	<header class="header">
 		<div class="header__top">
-
 			<div class="container header__container-top">
 				<a href="#">
 					<img class="header__logo" src="img/logo.svg" alt="Логотип aquaremont24.ru">
 				</a>
 
-				<span class="header__alarm-text">Работаем круглосуточно!</span>
-
+				<!-- <span class="header__alarm-text">Работаем круглосуточно!</span> -->
 				<a class="header__tel" href="tel:+7(456) 456-8989">
 					<svg class="header__tel-svg" width="14" height="16" viewBox="0 0 14 16" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
@@ -52,19 +59,25 @@
 				</button>
 
 
-				<nav class="nav header__nav">
-					<ul class="nav__list">
-						<li class="nav__item"><a class="nav__link" href="#price">Цены</a></li>
-						<li class="nav__item"><a class="nav__link" href="#service">Услуги</a></li>
-						<li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
-						<li class="nav__item"><a class="nav__link" href="#work">Работы</a></li>
-						<li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
-						<li class="nav__item"><a class="nav__link" href="#service-area">Территория обслуживания</a></li>
-					</ul>
-				</nav>
 
+				<div class="header__box-nav" id="box-nav">
+					<div class="header__wrap-mobile-menu">
+						<img class="header__mobile-menu-logo" src="img/logo-white.svg" alt="Логотип aquaremont24.ru">
+						<button class="header__btn-close" id="btn-close">X</button>
+					</div>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a class="nav__link" href="#price-section">Цены</a></li>
+							<li class="nav__item"><a class="nav__link" href="#service-section">Услуги</a></li>
+							<li class="nav__item"><a class="nav__link" href="#reviews-section">Отзывы</a></li>
+							<li class="nav__item"><a class="nav__link" href="#work-section">Работы</a></li>
+							<li class="nav__item"><a class="nav__link" href="#about-section">О нас</a></li>
+							<li class="nav__item"><a class="nav__link" href="#service-area-section">Территория обслуживания</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 				<button class="btn header__call-btn --bottom-call-btn  --call-form-open">Заказать звонок</button>
-
 			</div>
 		</div>
 	</header>
@@ -73,7 +86,7 @@
 
 
 
-	<main>
+	<main class="main">
 
 		<!-- Hero -->
 		<section class="hero">
@@ -114,7 +127,7 @@
 
 					<div class="offer__discount">
 						<img class="offer__ico-discount" src="img/icon-dis-offer.svg" alt="акция на услуги">
-						<p class="offer__discount-text">Скидка 30% на все услуги при первом заказе !</p>
+						<p class="offer__discount-text">Скидка 30% на все услуги при первом заказе&nbsp;!</p>
 					</div>
 
 					<div class="offer__form">
@@ -168,8 +181,8 @@
 		</section>
 
 		<!-- прайс -->
-		<section class="price" id="price">
-			<div class="container price__container">
+		<section class="price anchor" id="price-section">
+			<div class="container price__container ">
 
 				<span class="tagline price__tagline">
 					Самые низкие
@@ -192,27 +205,27 @@
 					</li>
 					<li class="price__item">
 						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
-						<span class="price__cost">от 3 500 ₽</span>
+						<span class="price__cost">200 ₽</span>
+					</li>
+					<li class="price__item">
+						<span class="price__discriptions">Замена кемона </span>
+						<span class="price__cost">от 50 000 ₽</span>
 					</li>
 					<li class="price__item">
 						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
 						<span class="price__cost">от 3 500 ₽</span>
 					</li>
 					<li class="price__item">
-						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
-						<span class="price__cost">от 3 500 ₽</span>
+						<span class="price__discriptions">Видео диагностика</span>
+						<span class="price__cost">3 500 ₽</span>
 					</li>
 					<li class="price__item">
 						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
-						<span class="price__cost">от 3 500 ₽</span>
+						<span class="price__cost">от 500 ₽</span>
 					</li>
 					<li class="price__item">
 						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
-						<span class="price__cost">от 3 500 ₽</span>
-					</li>
-					<li class="price__item">
-						<span class="price__discriptions">Диагностика системы водоснабжения (выезд мастера)</span>
-						<span class="price__cost">от 3 500 ₽</span>
+						<span class="price__cost">от 35 500 ₽</span>
 					</li>
 				</ul>
 			</div>
@@ -221,7 +234,7 @@
 
 		<!-- услуги -->
 
-		<section class="service" id="service">
+		<section class="service anchor" id="service-section">
 
 			<div class="container service__container">
 
@@ -320,6 +333,18 @@
 						</a>
 					</li>
 
+					<li class="service__item">
+						<a class="service__link" href="#">
+							<article class="service-card-decor service-card">
+								<h3 class="service-card__heading">Устраняем ил из насоса</h3>
+								<p class="service-card__discriptions">Полное удаление или и обновление всех расходников
+								</p>
+								<span class="service-card__cost">от <span class="service-card__cost-bold">3000</span>
+									₽</span>
+								<span class="service-card__text-details">Подробнее</span>
+							</article>
+						</a>
+					</li>
 
 
 
@@ -328,11 +353,16 @@
 
 
 
+
+
+
+					<!-- это класс хотел разместить карточку всегда по центру service__item--offer -->
 					<li class="service__item">
 						<article class=" service-card-offer">
 							<h3 class="service-card-offer__heading">Мы лучьшие по ремонту скважин
 								бл блаб ла</h3>
-							<button class="service-card-offer__btn">Оставить заявку</button>
+								<a href="#requisition-section" class="service-card-offer__link">Оставить заявку</a>
+								<!-- <button class="service-card-offer__btn">Оставить заявку</button> -->
 						</article>
 					</li>
 
@@ -342,6 +372,8 @@
 			</div>
 
 		</section>
+
+
 
 		<section class="steps">
 			<div class="steps__wrap">
@@ -392,13 +424,16 @@
 				</div>
 			</div>
 
+			
+
 			<div class="container steps__wrap-btn">
-				<button class="btn steps__btn">Оформить заявку</button>
+				<!-- <button class="btn steps__btn">Оформить заявку</button> -->
+				<a class="btn steps__btn" href="#requisition-section">Оформить заявку</a>
 			</div>
 
 		</section>
 
-		<section class="work" id="work">
+		<section class="work anchor" id="work-section">
 			<div class="container work__container">
 
 
@@ -406,64 +441,46 @@
 				<h2 class="heading work__heading">Наши работы</h2>
 
 
+				<div class="f-carousel work__slider-box" id="work__slider">
 
 
 
-
-               <div class="slider-box work__slider-box">
-				<button class="arrows work__arrows-left">
-					<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
-						</svg>
-				</button>
-
-
-				<!-- Slider main container -->
-				<div class="swiper work__swiper">
-					<!-- Additional required wrapper -->
-					<div class="swiper-wrapper">
-						<!-- Slides -->
-						<div class="swiper-slide work__swiper-slide">
-							<img class="work__swiper-slide-img" src="./img/1.webp" loading="lazy" alt="картинка недавние работы">
-						</div>
-						<div class="swiper-slide work__swiper-slide">
-							<img class="work__swiper-slide-img" src="./img/2.webp" loading="lazy" alt="картинка недавние работы">
-						</div>
-						<div class="swiper-slide work__swiper-slide">
-							<img class="work__swiper-slide-img" src="./img/3.webp" loading="lazy" alt="картинка недавние работы">
-						</div>
-						<div class="swiper-slide work__swiper-slide">
-							<img class="work__swiper-slide-img" src="./img/1.webp" loading="lazy" alt="картинка недавние работы">
-						</div>
-						<div class="swiper-slide work__swiper-slide">
-							<img class="work__swiper-slide-img" src="./img/2.webp" loading="lazy" alt="картинка недавние работы">
-						</div>
-						<div class="swiper-slide work__swiper-slide">
-							<img class="work__swiper-slide-img" src="./img/3.webp" loading="lazy" alt="картинка недавние работы">
-						</div>
-
+					<div class="f-carousel__slide work__slide">
+						<a class="slider-link" href="./img/1.webp" data-fancybox="work" data-caption="Наши работы">
+							<img class="swiper-slide-img work__swiper-slide-img" src="./img/1.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
 					</div>
 
+					<div class="f-carousel__slide work__slide">
+						<a class="slider-link" href="./img/2.webp" data-fancybox="work" data-caption="Наши работы">
+							<img class="swiper-slide-img work__swiper-slide-img" src="./img/2.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide work__slide">
+						<a class="slider-link" href="./img/3.webp" data-fancybox="work" data-caption="Наши работы">
+							<img class="swiper-slide-img work__swiper-slide-img" src="./img/3.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+
+
+					<div class="f-carousel__slide work__slide">
+						<a class="slider-link" href="./img/1.webp" data-fancybox="work" data-caption="Наши работы">
+							<img class="swiper-slide-img work__swiper-slide-img" src="./img/3.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
 				</div>
 
-
-				<button class="arrows revert-arrows work__arrows-right">
-					<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
-						</svg>
-				</button>
-
-
-
-			</div>
-                  <!-- If we need pagination -->
-					<div class="swiper-pagination work__swiper-pagination"></div>
-			</div>
 		</section>
 
 
 
-		<section class="reviews" id="reviews">
+		<section class="reviews anchor" id="reviews-section">
 			<div class="container reviews__container">
 
 
@@ -471,73 +488,93 @@
 				<h2 class="heading reviews__heading">Отзывы клиентов</h2>
 
 
-				
+				<div class="f-carousel reviews__slider-box" id="reviews__slider">
 
-				<div class="slider-box reviews__swiper-box">
-					<button class="arrows reviews__arrows-left">
-						<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
-							</svg>
-					</button>
-	
-	
-					<!-- Slider main container -->
-					<div class="swiper reviews__swiper">
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-							<div class="swiper-slide reviews__swiper-slide">
-								<img class="reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy" alt="картинка недавние работы">
-							</div>
-	
-						</div>
-	
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
 					</div>
-	
-	
-					<button class="arrows revert-arrows reviews__arrows-right">
-						<svg class="arrows__svg" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z"/>
-							</svg>
-					</button>
-	
-	
-	
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+					<div class="f-carousel__slide reviews__slide">
+						<a class="slider-link" href="./img/chat.webp" data-fancybox="reviews"
+							data-caption="Отзывы клиентов">
+							<img class="swiper-slide-img reviews__swiper-slide-img" src="./img/chat.webp" loading="lazy"
+								alt="картинка недавние работы">
+						</a>
+					</div>
+
+
+
 				</div>
-					  <!-- If we need pagination -->
-						<div class="swiper-pagination reviews__swiper-pagination"></div>
-				</div>
-
-
-
-
-
-
-
 
 
 
@@ -545,13 +582,16 @@
 
 			</div>
 
+			</div>
+
 		</section>
 
 
-		<section class="requisition">
+
+		<section class="requisition" >
 			<div class="container requisition__container">
 
-				<div class="requisition__wrap-left">
+				<div class="requisition__wrap-left anchor-requisition" id="requisition-section">
 
 					<span class="tagline requisition__tagline">Работаем 24/7</span>
 					<h2 class="heading requisition__heading">Оформить заявку</h2>
@@ -592,7 +632,7 @@
 		</section>
 
 
-		<section class="about" id="about">
+		<section class="about anchor" id="about-section">
 			<div class="container about__container">
 				<span class="tagline about__tagline">Работаем там,где другим не подсилу</span>
 				<h2 class="heading about__heading">О нас</h2>
@@ -630,8 +670,8 @@
 				<span class="tagline information__tagline">Что то подумать</span>
 				<h2 class="heading information__heading">Информация</h2>
 
-				<h3>РЕМОНТ СКВАЖИН</h3>
-				<p>
+				<h3 class="bold m-b-8">РЕМОНТ СКВАЖИН</h3>
+				<p class="m-b-16">
 					Наличие профессиональных знаний и соответствующего оборудования гарантирует качество проводимых
 					мероприятий. В этом случае можно прогнозировать результат и давать гарантию, что источник подачи
 					воды в дальнейшем будет функционировать исправно и выдавать чистую воду.
@@ -644,26 +684,31 @@
 				</p>
 
 
-				<h3>КАПИТАЛЬНЫЙ РЕМОНТ СКВАЖИН</h3>
-				<p>
-					В этом случае в процессе капремонта восстанавливаются ее основные составляющие. В зависимости от
-					сложности и объема принято относить к одной из двух категорий. 1 категория – ремонт при глубине
-					колодца до 1,5 км. 2-ая – глубиной более 1,5 км.
-					Вторая категория также включает наиболее трудоемкие работы: замена участков или восстановление
-					геометрии обсадных колонн, выполнение гидроразрыва пласта, устранение аварий и нарушений; изоляция
-					ствола, технологические цементные заливки, ремонт наклонных скважин.
-				</p>
 
-				<h3>ТЕКУЩИЙ РЕМОНТ СКВАЖИНЫ</h3>
-				<p>
-					При необходимости текущего ремонта скважин восстанавливается нормальная работа оборудования
-					(устьевого и скважинного), меняется режим эксплуатации, подъемная колонна и забой очищаются от
-					отложений парафина и смолы, соли и песчаных пробок.
-				</p>
+				<div class="information__add-block" id="add-block">
 
+					<h3 class="bold m-b-8">КАПИТАЛЬНЫЙ РЕМОНТ СКВАЖИН</h3>
+					<p class="m-b-16">
+						В этом случае в процессе капремонта восстанавливаются ее основные составляющие. В зависимости от
+						сложности и объема принято относить к одной из двух категорий. 1 категория – ремонт при глубине
+						колодца до 1,5 км. 2-ая – глубиной более 1,5 км.
+						Вторая категория также включает наиболее трудоемкие работы: замена участков или восстановление
+						геометрии обсадных колонн, выполнение гидроразрыва пласта, устранение аварий и нарушений;
+						изоляция
+						ствола, технологические цементные заливки, ремонт наклонных скважин.
+					</p>
+
+					<h3 class="bold m-b-8">ТЕКУЩИЙ РЕМОНТ СКВАЖИНЫ</h3>
+					<p class="m-b-16">
+						При необходимости текущего ремонта скважин восстанавливается нормальная работа оборудования
+						(устьевого и скважинного), меняется режим эксплуатации, подъемная колонна и забой очищаются от
+						отложений парафина и смолы, соли и песчаных пробок.
+					</p>
+
+				</div>
 
 				<div class="information__btn-wrap">
-					<button class="btn information__btn">Показать еще</button>
+					<button class="btn information__btn" id="information-btn">Показать еще</button>
 				</div>
 
 
@@ -676,7 +721,7 @@
 					<li class="contacts__item">
 						<div class="contacts__img contacts__img--location">
 						</div>
-						<span class="contacts__text">Москва ул. Фейковая 19</span>
+						<span class="contacts__text">Москва ул. Фейковая&nbsp;19</span>
 					</li>
 
 					<li class="contacts__item ">
@@ -705,79 +750,84 @@
 		</section>
 
 
-		<section class="service-area" id="service-area">
+		<section class="service-area anchor" id="service-area-section">
 
 			<div class="container service-area__container">
 				<h2 class="heading service-area__heading">Территория обслуживания</h2>
 
 				<ul class="service-area__list">
-					<li class="service-area__item"><a class="service-area__link" href="http://">Балашихинский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Балашиха</a>
 					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Бронницы</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Волоколамский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Видное</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Воскресенский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Волоколамск</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Дмитровский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Воскресенск</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Домодедовский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Домодедово</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Дубна</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Егорьевский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Егорьевск</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Зарайск</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Зарайский район</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Истринский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Истра</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Кашира</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Каширский район</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Коломна</a></li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Клин</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Коломенский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Красногорск</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Красногорский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Лосино-Петровский</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Ленинский район</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Луховицы</a></li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Лотошинский район</a>
 					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Луховицы</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Люберецкий район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Люберцы</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Можайский район</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Мытищинский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Можайск</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Мытищи</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Наро-Фоминский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Наро-Фоминск</a>
 					</li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Нахабино</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Ногинский район</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Одинцовский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Ногинск</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Одинцово</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Орехово-Зуевский
-							район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Орехово-Зуево</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Павлово-Посадский
-							район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Павлово-Посадский</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Подольский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Подольск</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Пушкинский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Пушкино</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Раменский район</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Рузский район</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Сергиево-Посадский
-							район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Раменское</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Руза</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Сергиев Посад</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Серпуховский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Серпухов</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Сходня</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Солнечногорск</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Солнечногорский
-							район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Ступино</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Ступинский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Талдом</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Химкинский район</a>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Фрязино</a>
 					</li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Хотьково</a></li>
-					<li class="service-area__item"><a class="service-area__link" href="http://">Чеховский район</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Химки</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Черноголовка</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Чехов</a></li>
+
+					<li class="service-area__item"><a class="service-area__link" href="http://">Шатура</a></li>
 					<li class="service-area__item"><a class="service-area__link" href="http://">Щёлково</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Электросталь</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Дзержинский</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Долгопрудныйв</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Жуковскийв</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Королёв</a></li>
+					<li class="service-area__item"><a class="service-area__link" href="http://">Котельники</a></li>
 				</ul>
 			</div>
 		</section>
@@ -831,14 +881,7 @@
 
 			</div>
 
-			<!-- <nav class="footer__center">
-				<h3 class="footer__nav-heading">Навигация</h3>
-				<ul class="footer__list">
-                  <li class="footer__item"><a class="footer__link" href="http://"></a>Цены</li>
-				  <li class="footer__item"><a class="footer__link" href="http://"></a>Услуги</li>
-				  <li class="footer__item"><a class="footer__link" href="http://"></a>О нас</li>
-				</ul>
-			</nav> -->
+
 
 			<div class="footer__right">
 				<h3 class="footer__heading-call">Рабаотаем круглосуточно</h3>
@@ -870,7 +913,7 @@
 	</footer>
 
 
-
+	<script defer src="./js/slider.bundle.js"></script>
 </body>
 
 </html>
@@ -879,3 +922,17 @@
 
 <!-- @@include('blocks/header.html')
 @@include('blocks/footer.html') -->
+
+
+
+
+
+
+<!-- <nav class="footer__center">
+				<h3 class="footer__nav-heading">Навигация</h3>
+				<ul class="footer__list">
+                  <li class="footer__item"><a class="footer__link" href="http://"></a>Цены</li>
+				  <li class="footer__item"><a class="footer__link" href="http://"></a>Услуги</li>
+				  <li class="footer__item"><a class="footer__link" href="http://"></a>О нас</li>
+				</ul>
+			</nav> -->

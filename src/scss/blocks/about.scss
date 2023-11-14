@@ -1,6 +1,8 @@
 .about {
-    padding: 64px 0;
+    // padding: 64px 0;
     // background-color: var(--colorBg);
+    padding-top: var(--paddigTopSections);
+    padding-bottom: var(--paddigBottomSections);
 }
 
 .about__container {

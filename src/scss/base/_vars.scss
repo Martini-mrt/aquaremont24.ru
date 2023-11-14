@@ -10,7 +10,7 @@
 	--colorWhite-2: #ffffff88;
 
 	--colorWhite-3: #ffffff3f;
-	
+
 	--colorCR: #d9d9d985;
 
 
@@ -19,16 +19,28 @@
 
 	--colorSecondaryBlue: #1d69b7;
 	--colorSecondaryBlue2: #4b82b8;
-	
+
 	--colorHoverBtn: #ffc731;
 	--colorHoverBtn2: #fbe880;
 
+
 	--colorBlack: #111111;
 	--color: #ffbb00;
-	
+
 	--color: #b4930c;
 
-	
+
+	--paddigTopSections: 40px;
+	--paddigBottomSections: 40px;
+
+
+
+	//   anchor 90px
+	--menuHeight: 50px;
+	--paddingTop: 48px;
+
+	--marginTop: calc(var(--menuHeight) * -1);
+	--paddingFull: calc(var(--menuHeight) + var(--paddingTop));
 
 
 
@@ -36,12 +48,49 @@
 
 
 
-	
-	--page-bg: #fff;
-    --text-color: #111111;
+
+
+
+
+
+
+	// --page-bg: #fff;
+	--text-color: #111111;
 	--font-main: 'montserrat';
 	--baseFontSise: 16px;
 
 
 
-  }
+
+	--f-carousel-dots-width: 24px;
+	--f-carousel-dots-height: 30px;
+	--f-carousel-dot-width: 10px;
+	--f-carousel-dot-height: 10px;
+	--f-carousel-dot-radius: 50%;
+	--f-carousel-dot-color: var(--colorPrimaryBlue, currentColor);
+	--f-carousel-dot-opacity: 1;
+	--f-carousel-dot-hover-opacity: 0.4;
+
+	// настройки слайдера
+
+	// gap сладов
+	--slider-spacing: 8px;
+
+	//todo слфйдер work
+	// количесвто слайдов
+	--work-slider-count: 3;
+
+
+	// расчитываем ширину - блока слайда
+	//  весь контейнер делим на количесво показанных слайдов - отнимая еще gap от этой сумы
+	// width = 100% - (gap * countSlider) / countSlider  
+	--work-slider-width: calc((100% - (var(--work-slider-count) * var(--slider-spacing))) / var(--work-slider-count));
+
+
+	//todo слфйдер reviews
+	// количесвто слайдов
+	--reviews-slider-count: 4;
+	--reviews-slider-width: calc((100% - (var(--reviews-slider-count) * var(--slider-spacing))) / var(--reviews-slider-count));
+
+
+}

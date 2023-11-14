@@ -40,9 +40,13 @@ a {
 	color: inherit;
 }
 
-
 a:hover {
 	text-decoration: none;
+}
+
+a:focus,
+a:focus-visible {
+	outline: none;
 }
 
 /* Common */

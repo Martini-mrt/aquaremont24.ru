@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    
+
     width: 100%;
     // height: 500px;
 
@@ -68,18 +68,19 @@
 }
 
 .hero__item {
-    list-style-position: inside;
+    list-style-position: outside;
+    margin-left: 20px;
 }
 
 .hero__btn {
-  width: 200px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--colorBlack);
-  background-color: var(--colorPrimaryYellow);
-  transition: color, background-color .2s;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    background-color: var(--colorPrimaryYellow);
+    transition: color, background-color .2s;
 
-  &:hover,
+    &:hover,
     &:focus {
         background-color: var(--colorHoverBtn);
     }
@@ -88,7 +89,7 @@
         // color: var(--colorWhite);
         background-color: var(--colorHoverBtn2);
     }
- 
+
 }
 
 .hero__img {
@@ -96,10 +97,51 @@
     right: 0;
     bottom: 0;
     z-index: 0;
-    object-fit:cover;
+    object-fit: contain;
+
     // height: clamp(100%, 5vw, 50%);
     height: 100%;
+
+
 }
+
+
+
+@media (max-width: 1024px) {
+
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: clamp(32px, 5vw, 50px);
+        padding-bottom: 0;
+    }
+
+    .hero__heading {
+        margin-bottom: 45px;
+        max-width: 100%;
+        // font-size: clamp(40px, 11vw, 60px);
+        font-size: clamp(32px, 11vw, 60px);
+        line-height: clamp(38px, 11vw, 64px);
+    }
+
+    .hero__img {
+        position: static;
+        max-height: 700px;
+    }
+
+    .hero__btn {
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: clamp(16px, 5vw, 35px);
+    }
+
+}
+
+
+// @media (max-width: 1024px) {
+
+// }
 
 
 

@@ -39,6 +39,7 @@
 		"last 5 versions"
 	],
 	"dependencies": {
+		"@fancyapps/ui": "^5.0.26",
 		"swiper": "^11.0.3"
 	}
 }

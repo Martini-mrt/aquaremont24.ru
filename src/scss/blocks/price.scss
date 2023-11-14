@@ -1,5 +1,7 @@
 .price {
-    padding: 30px 0 30px 0;
+    // padding: 30px 0 30px 0;
+    padding-top: var(--paddigTopSections);
+    padding-bottom: var(--paddigBottomSections);
 }
 
 .price__container {}
@@ -9,7 +11,7 @@
 .price__tagline {}
 
 .price__heading {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .price__list {
@@ -23,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     padding: 8px;
     border-radius: 5px;
     border-bottom: 1px dotted var(--colorPrimaryBlue);
@@ -33,11 +35,10 @@
 }
 
 .price__discriptions {
-    // font-size: 15px;
     font-weight: 600;
 }
 
 .price__cost {
-    // font-size: 15px;
     font-weight: 600;
+    min-width: fit-content;
 }

@@ -1,5 +1,7 @@
 .service {
-    padding: 30px 0 64px 0;
+    // padding: 30px 0 64px 0;
+    padding-top: var(--paddigTopSections);
+    padding-bottom: calc(var(--paddigBottomSections) + 24px) ;
 }
 
 .service__container {}
@@ -7,7 +9,7 @@
 .service__tagline {}
 
 .service__heading {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .service__discriptions {
@@ -17,8 +19,8 @@
 
 .service__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    row-gap: 36px;
     column-gap: 24px;
 }
 
@@ -59,31 +61,8 @@
 
     background-size: cover;
     background-repeat: no-repeat;
-
-    // &:hover::before {
-    //     opacity: 0.2;
-    // }
-
-    // &:hover .service-card__text-details {
-    //     color: var(--colorPrimaryYellow);
-    // }
 }
 
-
-
-
-
-// .service-card-decor::before  {
-//     content: "";
-//     position: absolute;
-//     inset: 0;
-//     background-image: url('./../img/new-subtract.svg');
-//     background-repeat: no-repeat;
-//     background-position: bottom right;
-//     // background-position-y: 101%;
-//     // background-position-x: 101%;
-//     opacity: 0.1;
-// }
 
 .service-card-decor::before {
     content: "";
@@ -91,17 +70,9 @@
     inset: 0;
     background:
         radial-gradient(at top left, rgba(255, 255, 255, 0) 74%, #0000000d 76%, rgba(255, 255, 255, 1) 76.3%);
-    // background-position-y: 101%;
-    // background-position-x: 101%;
     opacity: 0.1;
     transition: opacity .1s;
 }
-
-// .service-card::before {
-
-// }
-
-
 
 .service-card::after {
     content: "";
@@ -156,7 +127,9 @@
 
 
 
-
+// .service__item--offer {
+//     grid-column: 2 / 3;
+// }
 
 
 
@@ -168,6 +141,7 @@
     // align-items: center;
     padding: 34px;
     height: 100%;
+    min-height: 324px;
     border-radius: 25px;
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
     // background-color: var(--colorPrimaryYellow);
@@ -183,13 +157,15 @@
     font-weight: 600;
 }
 
-.service-card-offer__btn {
+.service-card-offer__link {
     position: relative;
+    display: block;
     padding: 15px 0 15px 0;
     width: 100%;
     border-radius: 25px;
     background: #082D53;
     color: var(--colorWhite);
+    text-align: center;
     font-weight: 600;
     font-size: 15px;
 
@@ -204,4 +180,52 @@
         background-color: var(--colorSecondaryBlue2);
     }
 
+}
+
+
+@media (max-width: 1024px) {
+    .service__list {
+        
+        // grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .service__list {
+        
+        // grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 566px) {
+    .service__list {
+        
+        // grid-template-columns: repeat(1, 1fr);
+
+
+
+
+
+        // grid-template-columns: repeat(auto-fit, 1fr);
+
+        // grid-auto-columns: repeat(auto-fill, 1fr);
+
+        
+        
+    }
+    .service__heading {
+        margin-bottom: 16px;
+    }
+    .service-card__discriptions {
+        max-width: 70%;
+    }
+    .service-card {
+        padding-top: 40px;
+        min-height: 234px;
+    }
+    .service-card::after {
+        right: 232px;
+    }
+            
 }

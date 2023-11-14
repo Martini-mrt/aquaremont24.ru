@@ -1,5 +1,6 @@
 .offer {
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
+    padding-bottom: calc(var(--paddigBottomSections) - 24px) ;
     background-color: var(--colorWhite);
 }
 
@@ -25,12 +26,13 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 0 40px;
+    justify-content: center;
+    gap: 6px;
+    padding: 32px 25px 32px 50px;
     max-width: 436px;
     height: 134px;
     border-radius: 25px 0px 0px 0px;
-    // box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
     background-image: radial-gradient(at top left, var(--colorBg) 72%, var(--colorWhite) 42%);
 }
@@ -43,21 +45,13 @@
     padding: 7px;
     position: absolute;
     text-align: center;
-    padding-top: 18px;
     color: var(--colorWhite);
-    top: 0%;
-    right: 72%;
+    top: 10px;
+    left: -72px;
     transform: rotate(-45deg);
     background-color: #e43;
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
 
 
 
@@ -82,8 +76,6 @@
     align-items: center;
     gap: 16px;
     padding: 32px 18px 32px 18px;
-    // max-width: 215px;
-    // min-height: 182px;
     border-radius: 25px;
     background-color: var(--colorPrimaryYellow);
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
@@ -111,12 +103,55 @@
     transition: background-color .2s;
 
     &:hover,
-      &:focus {
-          background-color: var(--colorSecondaryBlue);
-      }
-  
-      &:active {
-          background-color: var(--colorSecondaryBlue2);
-      }
+    &:focus {
+        background-color: var(--colorSecondaryBlue);
+    }
+
+    &:active {
+        background-color: var(--colorSecondaryBlue2);
+    }
 
 }
+
+
+
+@media (max-width: 1024px) {
+    .offer__box {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .offer__form {
+        min-width: 252px;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+    .offer__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .offer__discount {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .offer__form {
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .offer__form-text {
+        max-width: 92%;
+    }
+}
+
+
+

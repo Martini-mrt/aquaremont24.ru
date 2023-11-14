@@ -12,17 +12,43 @@
 }
 .service-area__list {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,auto);
+
+    // grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+
+    justify-content: space-around;
+
     row-gap: 12px;
     column-gap: 8px;
     color: var(--colorGrey);
+    // font-size: clamp(14px, 3vw, 16px); 
 }
 .service-area__item {
 }
 .service-area__link {
+    display: block;
     transition: color .2s;
     &:hover,
     &:focus {
         color: var(--colorPrimaryYellow);
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .service-area__list {
+        grid-template-columns: repeat(3,auto);
+        // gap: 32px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .service-area__list {
+        grid-template-columns: repeat(2, auto);
+        // gap: 32px;
     }
 }

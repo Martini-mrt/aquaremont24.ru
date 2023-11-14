@@ -1,5 +1,8 @@
 .achievements {
-    padding: 30px 0 50px 0;
+    // padding: 30px 0 50px 0;
+    padding-top: var(--paddigTopSections);
+    padding-bottom: var(--paddigBottomSections);
+    
 }
 
 .achievements__container {}
@@ -39,3 +42,24 @@
 
 
 .achievements__bottom-text {}
+
+
+
+
+@media (max-width: 1024px) {
+    .achievements__list {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .achievements__digital {
+        font-size: clamp(35px, 8vw, 55px);
+    }
+    .achievements__list {
+        gap: clamp(10px, 3vw, 18px);
+    }
+}
+
+@media (max-width: 500px) {
+    .achievements__list {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}

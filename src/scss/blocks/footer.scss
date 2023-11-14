@@ -10,14 +10,16 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    // padding: 24px 0;
     border-top: 1px solid var(--colorWhite-3);
     border-bottom: 1px solid var(--colorWhite-3);
 
 }
 
 .footer__left {
-    width: 30%;
+    width: 50%;
 }
 
 .footer__logo {
@@ -162,4 +164,38 @@
 .footer__police-link {
     display: block;
     text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 500px) {
+
+
+   
+    .footer__container-top {
+        flex-direction: column;
+
+    }
+
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer__discriptions {
+        text-align: center;
+    }
+
+    .footer__social-list {
+        justify-content: center;
+    }
+
+    .footer__container-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

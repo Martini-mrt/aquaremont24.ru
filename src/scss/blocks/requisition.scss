@@ -5,8 +5,19 @@
 
 .requisition__container {
     display: flex;
-    // justify-content: space-between;
-    gap: 50px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.requisition__heading {
+    margin-bottom: 32px;
+}
+
+
+.anchor-requisition {
+    margin-top: -64px;
+    padding-top: 64px;
 }
 
 //   ###### left
@@ -15,7 +26,8 @@
     flex-direction: column;
     // justify-content: space-between;
 
-    width: 100%;
+    // width: 100%;
+    max-width: 580px;
     // height: 100%;
     // background-color: #a4ff95;
 }
@@ -26,11 +38,12 @@
     flex-direction: column;
     gap: 21px;
     padding: 40px 42px;
-    margin-top: auto;
+    // margin-top: 32px;
     // height: 179px;
     border-radius: 25px;
     background-color: var(--colorWhite);
-    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    // box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 4px 15px 15px rgba(0, 0, 0, 0.05);
 }
 
 .requisition__input {
@@ -57,6 +70,8 @@
 }
 
 .requisition__btn {
+    font-size: 18px;
+    font-weight: 600;
     color: var(--colorWhite);
     background-color: var(--colorPrimaryBlue);
     transition: color, background-color .2s;
@@ -85,15 +100,19 @@
 
     display: flex;
     flex-direction: column;
+    // margin-bottom: 80px;
     padding: 40px 21px;
 
-    min-height: 700px;
+    // min-height: 700px;
+    height: 600px;
+
+    max-width: 485px;
     // max-width: 388px;
-    width: 100%;
+    // width: 80%;
     border-radius: 25px;
     // background-color: antiquewhite;
 
-    background-image: url('.././img/form-img.png');
+    background-image: url('.././img/requisition-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,3 +138,47 @@
 }
 
 .requisition__text-message {}
+
+
+@media (max-width: 1024px) {
+
+    .requisition__container {
+        flex-direction: column;
+        gap: 64px;
+
+    }
+
+    .requisition__wrap-left {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .requisition__wrap-right {
+        order: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .requisition__wrap-right {
+        height: 530px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .requisition__form {
+        // padding: 20px 8px;
+
+        padding: clamp(32px, 3vw, 40px) clamp(8px, 3vw, 42px); 
+    }
+}
+
+
+// anchor для формы
+@media (max-width: 650px) {
+ .anchor-requisition {
+    padding-top: 97px;
+    margin-top: -97px;
+ }
+}

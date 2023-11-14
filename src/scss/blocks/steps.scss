@@ -1,4 +1,6 @@
-.steps {}
+.steps {
+   
+}
 
 .steps__wrap {
     padding-bottom: 32px;
@@ -13,7 +15,9 @@
 }
 
 .steps__container {
-    padding-top: 64px;
+    // padding-top: 64px;
+    padding-top: var(--paddigTopSections);
+    padding-bottom: var(--paddigBottomSections);
 }
 
 .steps__tagline {
@@ -32,14 +36,15 @@
 .steps__list {
 
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
 
+    // grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 
     // display: flex;
     // justify-content: space-around;
     gap: 16px;
     // flex-basis: ;
-    padding: 64px 0;
+    padding: 42px 0;
     // border: 1px solid rgb(247, 252, 247);
 }
 
@@ -53,16 +58,31 @@
 
 .card-step {
 
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-
-    grid-row: 1 /  4;
-    
-    display: grid;
-    grid-template-rows: subgrid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 16px;
+
+    padding: 24px;
+    // min-width: 280px;
+    
+
+    
+   
+   
+    border: 1px solid rgba(255, 255, 255, 0.2);;
+    border-radius: 25px;
+    
+
+
+
+
+    // grid-row: 1 /  4;
+    
+    // display: grid;
+    // grid-template-rows: subgrid;
+    // justify-items: center;
+    
 
 
     // width: 100%;
@@ -79,11 +99,18 @@
     // background-size: contain;
     // background-repeat: no-repeat;
    
+
+
+    
     margin-bottom: 21px;
     max-width: 118px;
-
+    max-height: 128px;
 
 }
+
+
+
+
 
 .card-step__digital {}
 
@@ -104,7 +131,7 @@
     // margin-top: auto;
     // align-items: flex-end;
     // min-height: 60px;
-    font-size: 15px;
+    // font-size: 15px;
     text-align: center;
     color: var(--colorWhite);
 }
@@ -115,12 +142,12 @@
 
 .steps__wrap-btn {
     margin-top: -32px;
-    padding: 0 55px;
-    padding-bottom: 64px;
+    // padding: 0 55px;
+    padding-bottom: 40px;
 }
 
 .steps__btn {
-    font-size: 35px;
+    font-size: clamp(27px, 5vw, 35px); 
     font-weight: 600;
     width: 100%;
     background-color: var(--colorPrimaryYellow);
@@ -149,6 +176,25 @@
 
 
 
+
+@media (max-width: 1024px) {
+    .steps__list {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .steps__list {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
 // обрезка строк
 // display: -webkit-box;
 // -webkit-line-clamp: 3;
@@ -158,4 +204,4 @@
 
 
 //  это применить в сервисы перенос карточек
-// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+// grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));

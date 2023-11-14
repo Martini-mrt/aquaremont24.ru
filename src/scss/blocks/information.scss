@@ -1,6 +1,9 @@
 .information {
-    padding: 64px 0;
+    // padding: 64px 0;
     background-color: var(--colorBg);
+
+    padding-top: var(--paddigTopSections);
+    padding-bottom: var(--paddigBottomSections);
 }
 
 .information__container {
@@ -19,8 +22,19 @@
 .information__btn-wrap {
     display: flex;
     justify-content: center;
-    padding: 32px 0;
+    padding: 32px 0 16px 0;
+    
 }
+
+.information__add-block {
+    display: none;
+
+}
+
+.information__add-block--show {
+    display: block;
+}
+
 
 
 .information__btn {
@@ -37,4 +51,14 @@
   &:active {
       background-color: var(--colorSecondaryBlue2);
   }
+}
+
+
+@media (max-width: 768px) {
+    .information__btn {
+        width: 100%;
+    }
+    .information__btn-wrap {
+        padding: 16px 0;
+    }
 }
