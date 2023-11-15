@@ -13,6 +13,8 @@
 
 	--colorCR: #d9d9d985;
 
+	--colorBlack: #111111;
+
 
 	// --colorWhite: #969595;
 
@@ -24,10 +26,9 @@
 	--colorHoverBtn2: #fbe880;
 
 
-	--colorBlack: #111111;
-	--color: #ffbb00;
-
-	--color: #b4930c;
+	
+	// --color: #ffbb00;
+	// --color: #b4930c;
 
 
 	--paddigTopSections: 40px;
@@ -79,8 +80,6 @@
 	//todo слфйдер work
 	// количесвто слайдов
 	--work-slider-count: 3;
-
-
 	// расчитываем ширину - блока слайда
 	//  весь контейнер делим на количесво показанных слайдов - отнимая еще gap от этой сумы
 	// width = 100% - (gap * countSlider) / countSlider  

@@ -222,6 +222,142 @@ body {
 
 
 
+// текст политики конфиденциальности
+.text-policy {
+  font-size: 10px;
+}
+
+.text-policy__policy-link {
+  text-decoration: underline;
+  color: var(--colorPrimaryBlue);
+}
+
+
+
+
+
+
+
+
+
+
+/* btn-up */
+.btn-up {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  left: 1%;
+  bottom: 10px;
+  z-index: 2;
+  align-items: center;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.25);
+  background-color: #234669;
+  transition: visibility 0.9s ease, opacity 0.9s ease-in-out, background-color .3s;
+
+}
+
+.btn-up__svg {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-up__svg path {
+  fill: var(--colorWhite);
+}
+
+.btn-up:hover {
+  background-color: var(--colorPrimaryBlue);
+}
+
+.btn-up.btn-up--show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* link Whatsapp */
+.link-whatsapp {
+  position: fixed;
+  bottom: 10px;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 25px;
+  background-color: #25D366;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+
+  /* transform: translateX(-100px); */
+
+
+  /* transition: background-color .3s; */
+
+  transition: background-color .3s;
+  /*Скорость перехода состояния элемента*/
+
+  /* Указываем название анимации, её время и количество повторов*/
+  animation: bounceInRight 1s 1;
+
+  /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-fill-mode: forwards;
+  /* Задержка перед началом */
+  animation-delay: .5s;
+
+}
+
+.link-whatsapp:hover {
+  background-color: #019939;
+}
+
+.link-whatsapp__svg {
+  display: block;
+  width: 30px;
+}
+
+.link-whatsapp__svg path {
+  fill: var(--colorWhite);
+}
+
+@keyframes bounceInRight {
+  60%, 75%, 90%, from, to {
+      animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+  }
+  from {
+      opacity: 0;
+      transform: translate3d(3000px, 0, 0)
+  }
+  60% {
+      opacity: 1;
+      transform: translate3d(-25px, 0, 0)
+  }
+  75% {
+      transform: translate3d(10px, 0, 0)
+  }
+  90% {
+      transform: translate3d(-5px, 0, 0)
+  }
+  to {
+      opacity: 1;
+      transform: none
+  }
+}
+
+
+
+
+
+
 
 
   @media (max-width: 1024px) {

@@ -32,7 +32,7 @@
 		<div class="header__top">
 			<div class="container header__container-top">
 				<a href="#">
-					<img class="header__logo" src="img/logo.svg" alt="Логотип aquaremont24.ru">
+					<img class="header__logo" src="img/logo.svg" alt="Логотип aquaremont24.ru" loading="lazy">
 				</a>
 
 				<!-- <span class="header__alarm-text">Работаем круглосуточно!</span> -->
@@ -62,7 +62,8 @@
 
 				<div class="header__box-nav" id="box-nav">
 					<div class="header__wrap-mobile-menu">
-						<img class="header__mobile-menu-logo" src="img/logo-white.svg" alt="Логотип aquaremont24.ru">
+						<img class="header__mobile-menu-logo" src="img/logo-white.svg" alt="Логотип aquaremont24.ru"
+							loading="lazy">
 						<button class="header__btn-close" id="btn-close">X</button>
 					</div>
 					<nav class="nav header__nav">
@@ -72,7 +73,8 @@
 							<li class="nav__item"><a class="nav__link" href="#reviews-section">Отзывы</a></li>
 							<li class="nav__item"><a class="nav__link" href="#work-section">Работы</a></li>
 							<li class="nav__item"><a class="nav__link" href="#about-section">О нас</a></li>
-							<li class="nav__item"><a class="nav__link" href="#service-area-section">Территория обслуживания</a>
+							<li class="nav__item"><a class="nav__link" href="#service-area-section">Территория
+									обслуживания</a>
 							</li>
 						</ul>
 					</nav>
@@ -107,7 +109,7 @@
 					<li class="hero__item">Человеческий подход к каждому клиенту</li>
 				</ul>
 
-				<button class="btn hero__btn">Сделать заказ</button>
+				<button class="btn hero__btn --call-form-open">Сделать заказ</button>
 
 
 
@@ -133,7 +135,7 @@
 					<div class="offer__form">
 						<img class="offer__ico-form" src="img/ingener 1.svg" alt="консультация">
 						<p class="offer__form-text">Получите бесплатную консультацию специалиста</p>
-						<button class="offer__form-btn">Получить консультацию</button>
+						<button class="offer__form-btn --call-form-open">Получить консультацию</button>
 					</div>
 
 				</div>
@@ -361,8 +363,8 @@
 						<article class=" service-card-offer">
 							<h3 class="service-card-offer__heading">Мы лучьшие по ремонту скважин
 								бл блаб ла</h3>
-								<a href="#requisition-section" class="service-card-offer__link">Оставить заявку</a>
-								<!-- <button class="service-card-offer__btn">Оставить заявку</button> -->
+							<a href="#requisition-section" class="service-card-offer__link">Оставить заявку</a>
+							<!-- <button class="service-card-offer__btn">Оставить заявку</button> -->
 						</article>
 					</li>
 
@@ -386,7 +388,7 @@
 
 
 						<li class="card-step steps__card-step">
-							<img class="card-step__img" src="img/step1.svg" alt="первый шаг для заявки">
+							<img class="card-step__img" src="img/step1.svg" alt="первый шаг для заявки" loading="lazy">
 							<h3 class="card-step__heading">Заполнение заявки</h3>
 							<p class="card-step__discriptions">Заполнение <span class="bold">заявки</span>
 								для обратной связи</p>
@@ -395,7 +397,7 @@
 
 
 						<li class="card-step steps__card-step">
-							<img class="card-step__img" src="img/step2.svg" alt="первый шаг для заявки">
+							<img class="card-step__img" src="img/step2.svg" alt="первый шаг для заявки" loading="lazy">
 							<h3 class="card-step__heading">Выезд специалиста</h3>
 							<p class="card-step__discriptions">Выезд специалиста для <span
 									class="bold">диагностики</span></p>
@@ -404,7 +406,7 @@
 
 
 						<li class="card-step steps__card-step">
-							<img class="card-step__img" src="img/step3.svg" alt="первый шаг для заявки">
+							<img class="card-step__img" src="img/step3.svg" alt="первый шаг для заявки" loading="lazy">
 							<h3 class="card-step__heading">Выполнение работ</h3>
 							<p class="card-step__discriptions"><span class="bold">Проведение
 									работ</span>, согласованных с заказчиком</p>
@@ -413,7 +415,7 @@
 
 
 						<li class="card-step steps__card-step">
-							<img class="card-step__img" src="img/step4.svg" alt="первый шаг для заявки">
+							<img class="card-step__img" src="img/step4.svg" alt="первый шаг для заявки" loading="lazy">
 							<h3 class="card-step__heading">Прием работ</h3>
 							<p class="card-step__discriptions"><span class="bold">Прием</span>
 								проделанных работ заказчиком</p>
@@ -424,7 +426,7 @@
 				</div>
 			</div>
 
-			
+
 
 			<div class="container steps__wrap-btn">
 				<!-- <button class="btn steps__btn">Оформить заявку</button> -->
@@ -582,13 +584,13 @@
 
 			</div>
 
-			</div>
+			<!-- </div> -->
 
 		</section>
 
 
 
-		<section class="requisition" >
+		<section class="requisition">
 			<div class="container requisition__container">
 
 				<div class="requisition__wrap-left anchor-requisition" id="requisition-section">
@@ -607,9 +609,9 @@
 
 						<button class="btn requisition__btn">Отправить заявку</button>
 
-						<p class="requisition__text-policy">
+						<p class="text-policy requisition__text-policy">
 							Нажимая кнопку “Отправить заявку” я соглашаюсь с обработкой персональных данных в
-							соответствии с <a class="requisition__policy-link" href="#">Политикой конфиденциальности</a>
+							соответствии с <a class="text-policy__policy-link" href="#">Политикой конфиденциальности</a>
 						</p>
 
 					</form>
@@ -838,7 +840,8 @@
 		<div class="container footer__container-top">
 
 			<div class="footer__left">
-				<img class="footer__logo" src="./img/logo-w.svg" loading="lazy" alt="логотип акваремонт 24">
+				<img class="footer__logo" src="./img/logo-w.svg" loading="lazy" alt="логотип акваремонт 24"
+					loading="lazy">
 				<p class="footer__discriptions">
 					Ремонт, обслуживание скважин любой сложности.
 					Качественно, быстро круглосуточно!
@@ -910,10 +913,63 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+		 <!-- btn-up  -->
+		 <button class="btn-up">
+			<svg class="btn-up__svg" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+			  <path
+				d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
+			  </path>
+			</svg>
+		  </button>
+		  <!-- whatsapp  -->
+		  <div class="link-whatsapp">
+			<a href="https://api.whatsapp.com/send/?phone=79859702461">
+			  <svg class="link-whatsapp__svg" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+				<path
+				  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+				</path>
+			  </svg>
+			</a>
+		  </div>
+
+
+		  <div class="modal">
+			<div class="modal__box">
+			  <button class="modal__close-btn"></button>
+			  <h2 class="heading modal__heading">Заказать звонок</h2>
+			  <p class="modal__text">
+				Бесплатный обратный звонок.
+			  </p>
+			  <p class="modal__text">
+				Мы с удовольствием ответим на все ваши вопросы!
+			  </p>
+			  <form class="callme__form form" action="#" method="POST">
+				<input class="callme__input" id="callme__phone" type="tel" placeholder="+7 (___) ___-__-__"
+				  name="phone" autocomplete="off" required aria-label="Контакты, заполните телефон" inputmode="tel">
+				<button class="btn callme__btn" type="submit">Заказать звонок</button>
+			  </form>
+			  <p class="text-policy modal__text-policy">
+				Нажимая кнопку “Отправить заявку” я соглашаюсь с обработкой персональных данных в
+				соответствии с <a class="text-policy__policy-link" href="#">Политикой конфиденциальности</a>
+			</p>
+			</div>
+		  </div>
+
+
 	</footer>
 
 
-	<script defer src="./js/slider.bundle.js"></script>
+	<script src="./js/slider.bundle.js"></script>
 </body>
 
 </html>
