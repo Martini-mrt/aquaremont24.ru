@@ -1,5 +1,8 @@
 .service-area {
-    padding: 64px 0;
+    // padding: 64px 0;
+    padding-top: var(--paddigTopSections);
+    padding-bottom: var(--paddigBottomSections);
+
     background-color: var(--colorPrimaryBlue);
     color: var(--colorWhite);
 }

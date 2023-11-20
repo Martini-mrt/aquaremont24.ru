@@ -1,5 +1,5 @@
 .steps {
-   
+// height: 645px;
 }
 
 .steps__wrap {
@@ -37,6 +37,7 @@
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
 
     // grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 
