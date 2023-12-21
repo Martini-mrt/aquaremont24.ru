@@ -19,20 +19,34 @@
     align-items: center;
     border-radius: 10px;
     border: 1px solid #082D53;
+    font-feature-settings: "tnum";
 }
 
 .achievements__text {
+    // display: block;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
 }
 
 .achievements__digital {
-    text-align: center;
+    // text-align: center;
     color: var(--colorPrimaryBlue);
     font-size: 55px;
     font-weight: 700;
 }
+
+.achievements__count {
+    
+    
+}
+
+.achievements__digital-suf {
+  
+    // font-feature-settings: "tnum";
+
+}
+
 
 .achievements__bottom-text {}
 
@@ -41,22 +55,24 @@
     background-color: var(--colorPrimaryBlue);
 }
 
-.achievements.achievements--single  .achievements__container .achievements__item{
+.achievements.achievements--single .achievements__container .achievements__item {
     color: var(--colorWhite);
     border: 1px solid var(--colorWhite);
 }
 
-.achievements.achievements--single  .achievements__container .achievements__item .achievements__digital{
+.achievements.achievements--single .achievements__container .achievements__item .achievements__digital {
     color: var(--colorWhite);
 }
 
 @media (max-width: 1024px) {
     .achievements__list {
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
     .achievements__digital {
         font-size: clamp(35px, 8vw, 55px);
     }
+
     .achievements__list {
         gap: clamp(10px, 3vw, 18px);
     }
@@ -64,6 +80,6 @@
 
 @media (max-width: 500px) {
     .achievements__list {
-    grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }

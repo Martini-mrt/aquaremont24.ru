@@ -1,5 +1,6 @@
 import Inputmask from "./inputmask.js";
 import JustValidate from "./just-validate.production.min.js";
+import countUp from "./counter.js";
 
 
 
@@ -335,7 +336,19 @@ function closePopUp() {
 
 
 
+// counter
 
+  // Simplifed version of Viget dynamic modules to attach instances for this demo
+  // https://www.viget.com/articles/how-does-viget-javascript/
+  // You CAN use this pattern, but it's single purpose right now
+  const dataModules = [...document.querySelectorAll('[data-module="countup"]')];
+  
+  dataModules.forEach((element) => {
+    element.dataset.module.split(" ").forEach(function () {
+      new countUp(element);
+    });
+  });
+  
 
 
 
@@ -457,3 +470,8 @@ function enableScroll() {
     document.body.removeAttribute('data-position');
     document.documentElement.style.scrollBehavior = 'smooth';
 }
+
+
+
+
+
