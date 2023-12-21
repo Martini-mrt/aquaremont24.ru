@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    // height: 100vh;
     z-index: 999;
     overflow-y: auto;
     background-color: var(--colorPrimaryBlue);
@@ -27,9 +26,8 @@
     min-width: 200px;
     max-width: 500px;
     padding: clamp(25px, 5vw, 40px);
-    background-color: var(--colorBg); 
+    background-color: var(--colorBg);
     color: var(--colorBlack);
-    // background-color: #fdfcfc;
     border-radius: 27px;
     box-shadow: 0px 0px 18px -7px var(--colorPrimaryYellow);
     transform: scale(0);
@@ -53,13 +51,8 @@
     cursor: pointer;
     outline: none;
     background-color: transparent;
-    // font: inherit;
     transition: border .3s;
 }
-
-/* .modal__close-btn:hover {
-    border: 1px solid #FFD974;
-} */
 
 .modal__close-btn::before,
 .modal__close-btn::after {
@@ -87,23 +80,16 @@
     transform: rotate(-45deg);
 }
 
-
-/*  */
 .modal__heading {
     margin: 0;
     margin-bottom: 15px;
-    // color: var(--colorBlack);
-    // font-weight: 600;
 }
 
 .modal__text {
     margin: 0;
-    // color: var(--colorBlack);
-    
 }
 
 /* form */
-
 .callme__form {
     display: flex;
     justify-content: center;
@@ -111,26 +97,19 @@
     flex-direction: column;
     gap: 10px;
     padding: 30px 0 10px 0;
-    // padding-top: 30px;
     color: var(--colorPrimaryBlue);
 }
 
 .callme__input {
-    /* height: 50px; */
-    /* padding-left: 23px; */
     padding: 12px 0 12px 0;
     width: 100%;
-    // max-width: 400px;
     background-color: var(--colorWhite);
-    
     border: 1px solid var(--colorGrey);
     text-align: center;
     border-radius: 100px;
-
     font-size: 15px;
     line-height: 1.5em;
     color: var(--colorBlack);
-
     transition: background-color, border;
     transition-duration: 0.2s;
     transition-timing-function: ease;
@@ -148,7 +127,6 @@
     font-weight: 700;
     transition: background-color .2s;
 }
-
 
 .callme__btn:hover,
 .callme__btn:focus {

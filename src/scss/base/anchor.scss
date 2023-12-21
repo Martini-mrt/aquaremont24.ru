@@ -1,17 +1,12 @@
 @media (max-width: 650px) {
-
     //  коррекция с для stycky меню
     // должен совпадать с брекпоинтом с header появления бургера
     //    подключать должен последним что бы был больше вес
     // ссоздаем отступы для якоря
-
-
-
     .anchor {
         position: relative;
         z-index: -1;
         padding-top: var(--paddingFull);
         margin-top: var(--marginTop);
-
     }
 }

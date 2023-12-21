@@ -1,9 +1,6 @@
 .footer {
-
     background-color: var(--colorPrimaryBlue);
-
     color: var(--colorWhite);
-    // margin-bottom: 50px;
 }
 
 .footer__container-top {
@@ -12,10 +9,8 @@
     gap: 16px;
     padding-top: 24px;
     padding-bottom: 24px;
-    // padding: 24px 0;
     border-top: 1px solid var(--colorWhite-3);
     border-bottom: 1px solid var(--colorWhite-3);
-
 }
 
 .footer__left {
@@ -30,32 +25,6 @@
     margin-bottom: 16px;
     font-weight: 600;
 }
-
-
-
-// .footer__center {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     width: 33%;
-// }
-// .footer__nav-heading {
-//     margin-bottom: 8px;
-//     font-size: 20px;
-//     font-weight: 600;
-// }
-// .footer__list {
-//     display: grid;
-//     gap: 8px;
-// }
-// .footer__item {
-// }
-// .footer__link {
-// }
-
-
-
-
 
 .footer__right {
     display: flex;
@@ -75,6 +44,7 @@
     font-size: 20px;
     font-weight: 600;
     transition: color .2s;
+
     &:hover,
     &:focus {
         color: var(--colorPrimaryYellow);
@@ -88,7 +58,6 @@
 .footer__tel-svg path {
     fill: currentColor;
 }
-
 
 .footer__question {
     margin-bottom: 16px;
@@ -117,7 +86,6 @@
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    // max-width: 190px;
     width: 100%;
 }
 
@@ -129,10 +97,7 @@
     transition: background-color .3s;
 }
 
-.footer__social-link {
-
-}
-
+.footer__social-link {}
 
 .footer__social-link-svg {
     fill: var(--colorGrey);
@@ -140,14 +105,9 @@
 }
 
 
-.footer__social-item:hover  .footer__social-link-svg {
-    /* background-color: #757470; */
+.footer__social-item:hover .footer__social-link-svg {
     fill: var(--colorPrimaryYellow);
 }
-
-
-
-
 
 .footer__container-bottom {
     display: flex;
@@ -166,16 +126,9 @@
     text-decoration: underline;
 }
 
-
-
-
 @media (max-width: 500px) {
-
-
-   
     .footer__container-top {
         flex-direction: column;
-
     }
 
     .footer__left {

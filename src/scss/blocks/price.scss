@@ -1,14 +1,7 @@
 .price {
-    // padding: 30px 0 30px 0;
     padding-top: var(--paddigTopSections);
     padding-bottom: var(--paddigBottomSections);
 }
-
-.price__container {}
-
-.tagline {}
-
-.price__tagline {}
 
 .price__heading {
     margin-bottom: 16px;
@@ -29,9 +22,7 @@
     padding: 8px;
     border-radius: 5px;
     border-bottom: 1px dotted var(--colorPrimaryBlue);
-
     background-color: #E4EFFC;
-
 }
 
 .price__discriptions {

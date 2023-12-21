@@ -1,27 +1,19 @@
 html {
   scroll-behavior: smooth;
- 
-  
 }
 
 body {
-  // background-color: var(--colorPrimaryBlue);
   background-color: var(--colorWhite);
   color: var(--text-color);
   font-family: var(--font-main);
-  // font-size: var(--baseFontSise);
-  font-size: clamp(14px, 2vw, 16px);  
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 400;
-
-
 }
 
 .main {
   position: relative;
   z-index: 0;
 }
-
-
 
 .container {
   margin: 0 auto;
@@ -30,24 +22,17 @@ body {
   max-width: 1140px;
 }
 
-
-
-
-
-
-
-// 
 .tagline {
   display: flex;
   align-items: center;
   gap: 8px;
   color: var(--colorBlack);
-  font-size: clamp(12px, 2vw, 14px); 
+  font-size: clamp(12px, 2vw, 14px);
   font-weight: 600;
 }
 
 .tagline::before {
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   width: 20px;
@@ -55,9 +40,9 @@ body {
 }
 
 .heading {
-  font-size: clamp(28px, 6vw, 40px); 
+  font-size: clamp(28px, 6vw, 40px);
   font-weight: 700;
-  line-height: clamp(28px, 6vw, 48px); 
+  line-height: clamp(28px, 6vw, 48px);
 }
 
 // btn
@@ -65,7 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(10px, 3vw, 12px) 24px; 
+  padding: clamp(10px, 3vw, 12px) 24px;
   border-radius: 25px;
   color: var(--colorPrimaryBlue);
 }
@@ -95,7 +80,7 @@ body {
 
 // error validations
 .requisition__input.form__is-invalid,
-.callme__input.form__is-invalid{
+.callme__input.form__is-invalid {
   border: 1px solid #e62e2e;
 }
 
@@ -103,30 +88,21 @@ body {
   text-align: center;
 }
 
-
-
 // слайдер carusel
-
-
-
-.f-carousel__dots {
-  // display: flex;
-  // justify-content: center;
-  // gap: 16px;
-  // padding-top: 40px;
-
-}
+// .f-carousel__dots {
+// }
 
 .f-carousel__dot {
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background-color .8s;
+  transition: background-color 0.8s;
+
   &:hover {
-      background-color: var(--colorPrimaryYellow);
+    background-color: var(--colorPrimaryYellow);
   }
 }
 
-.is-current > button > .f-carousel__dot {
+.is-current>button>.f-carousel__dot {
   background-color: var(--colorWhite);
   border: 1px solid var(--colorPrimaryBlue);
 }
@@ -136,69 +112,33 @@ body {
   align-items: end;
 }
 
-// .carusel {
-//   margin: 100px 0;
-//   background-color: antiquewhite;
-// }
-
-.f-carousel {
-  // --f-carousel-spacing: 25px;
-  // --f-carousel-slide-width: 100%;
-}
-
-.f-carousel__slide {
-  // тут еще считаются отступы
-  // width: calc((100% - 16px) / 3);
-
-  // width: var(--slider-carousel-width);
-  // width: 100%;
-// --f-carousel-slide-width: 50px;
-
-}
-
 .f-carousel {
   --f-carousel-spacing: var(--slider-spacing);
-
-
   --f-button-width: 40px;
   --f-button-height: 40px;
-
   --f-button-svg-width: 24px;
   --f-button-svg-height: 24px;
   --f-button-svg-stroke-width: 3;
-
   --f-button-color: var(--colorWhite);
   --f-button-border-radius: 50%;
-  --f-button-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0
-          0 / 30%);
-
+  --f-button-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
   --f-button-bg: var(--colorPrimaryBlue);
   --f-button-hover-bg: var(--colorPrimaryBlue);
   --f-button-active-bg: #0d4984;
-
-
-  // --f-button-next-pos: 10px;
-  // --f-button-prev-pos: 10px;
   --f-button-next-pos: 0;
   --f-button-prev-pos: 0;
-
-
 }
 
 .f-button:hover svg path {
-  stroke: var(--colorPrimaryYellow)
+  stroke: var(--colorPrimaryYellow);
 }
 
 .f-button:active svg path {
-  
   stroke: var(--colorPrimaryYellow);
-  
 }
 
 .swiper-slide-img {
   border-radius: 25px;
-  // width: 296px;
-  // height: 246px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -208,21 +148,13 @@ body {
   display: block;
   width: 100%;
   height: 100%;
- 
   border-radius: 25px;
-  border: 1px solid transparent;
+  transition: transform .3s;
 
   &:focus {
-    border: 1px solid var(--colorPrimaryBlue);
+    // transform: scale(0.9);
   }
 }
-
-
-
-// fancybox
-// .fancybox__content img {
-//   border-radius: 25px;
-// }
 
 .fancybox__content {
   border-radius: 25px;
@@ -231,9 +163,6 @@ body {
 .is-compact .fancybox__footer .fancybox__caption {
   text-align: center;
 }
-
-
-
 
 // текст политики конфиденциальности
 .text-policy {
@@ -244,15 +173,6 @@ body {
   text-decoration: underline;
   color: var(--colorPrimaryBlue);
 }
-
-
-
-
-
-
-
-
-
 
 /* btn-up */
 .btn-up {
@@ -273,8 +193,7 @@ body {
   -webkit-box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.25);
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.25);
   background-color: #234669;
-  transition: visibility 0.9s ease, opacity 0.9s ease-in-out, background-color .3s;
-
+  transition: visibility 0.9s ease, opacity 0.9s ease-in-out, background-color 0.3s;
 }
 
 .btn-up__svg {
@@ -295,7 +214,6 @@ body {
   opacity: 1;
 }
 
-
 /* link Whatsapp */
 .link-whatsapp {
   position: fixed;
@@ -307,26 +225,17 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 25px;
-  background-color: #25D366;
+  background-color: #25d366;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   opacity: 0;
-
-  /* transform: translateX(-100px); */
-
-
-  /* transition: background-color .3s; */
-
-  transition: background-color .3s;
+  transition: background-color 0.3s;
   /*Скорость перехода состояния элемента*/
-
   /* Указываем название анимации, её время и количество повторов*/
   animation: bounceInRight 1s 1;
-
   /* Чтобы элемент оставался в конечном состоянии анимации */
   animation-fill-mode: forwards;
   /* Задержка перед началом */
-  animation-delay: .5s;
-
+  animation-delay: 0.5s;
 }
 
 .link-whatsapp:hover {
@@ -343,102 +252,41 @@ body {
 }
 
 @keyframes bounceInRight {
-  60%, 75%, 90%, from, to {
-      animation-timing-function: cubic-bezier(.215, .61, .355, 1)
-  }
-  from {
-      opacity: 0;
-      transform: translate3d(3000px, 0, 0)
-  }
-  60% {
-      opacity: 1;
-      transform: translate3d(-25px, 0, 0)
-  }
-  75% {
-      transform: translate3d(10px, 0, 0)
-  }
-  90% {
-      transform: translate3d(-5px, 0, 0)
-  }
+  60%,
+  75%,
+  90%,
+  from,
   to {
-      opacity: 1;
-      transform: none
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
-
-
-
-
-
-
-
-  @media (max-width: 1024px) {
-	.container {
-    padding-left: clamp(5px, 2vw, 42px); 
+@media (max-width: 1024px) {
+  .container {
+    padding-left: clamp(5px, 2vw, 42px);
     padding-right: clamp(5px, 2vw, 42px);
-	}
   }
-
-
-
-
-@media (max-width: 650px) {
-  .container {}
-}
-
-
-
-
-
-
-
-
-/* 350 */
-// @media (max-width: 414px) {
-//   .container {
-//     padding: 0 5px;
-//   }
-
-// }
-
-
-
-
-
-/*** iPhone and iOS Form Input Zoom Fixes ***/
-/* Fix Input Zoom on devices older than iPhone 5: */
-@media screen and (device-aspect-ratio: 2/3) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"],
-  input[type="url"]{ font-size: 16px; }
-}
-
-/* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
-@media screen and (device-aspect-ratio: 40/71) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"],
-  input[type="url"]{ font-size: 16px; }
-}
-
-/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
-@media screen and (device-aspect-ratio: 375/667) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"], 
-  input[type="tel"], input[type="url"]{ font-size: 16px; }
-}
-
-/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
-@media screen and (device-aspect-ratio: 9/16) {
-  select, textarea, input[type="text"], input[type="password"],
-  input[type="datetime"], input[type="datetime-local"],
-  input[type="date"], input[type="month"], input[type="time"],
-  input[type="week"], input[type="number"], input[type="email"],
-  input[type="tel"], input[type="url"]{ font-size: 16px; }
 }

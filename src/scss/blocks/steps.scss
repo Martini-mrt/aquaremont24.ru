@@ -1,11 +1,6 @@
-.steps {
-// height: 645px;
-}
-
 .steps__wrap {
     padding-bottom: 32px;
     width: 100%;
-    //   height: 582px;
     background:
         linear-gradient(rgb(8, 45, 83, 0.9) 100%, #ffffff00 0%),
         url(.././img/steps.webp);
@@ -15,7 +10,6 @@
 }
 
 .steps__container {
-    // padding-top: 64px;
     padding-top: var(--paddigTopSections);
     padding-bottom: var(--paddigBottomSections);
 }
@@ -29,97 +23,35 @@
 }
 
 .steps__heading {
-    // margin-bottom: 64px;
     color: var(--colorWhite);
 }
 
 .steps__list {
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-
-    // grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-
-    // display: flex;
-    // justify-content: space-around;
     gap: 16px;
-    // flex-basis: ;
     padding: 42px 0;
-    // border: 1px solid rgb(247, 252, 247);
-}
-
-
-
-
-.steps__item {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
 }
 
 .card-step {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-
     padding: 24px;
-    // min-width: 280px;
-    
-
-    
-   
-   
-    border: 1px solid rgba(255, 255, 255, 0.2);;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    ;
     border-radius: 25px;
-    
-
-
-
-
-    // grid-row: 1 /  4;
-    
-    // display: grid;
-    // grid-template-rows: subgrid;
-    // justify-items: center;
-    
-
-
-    // width: 100%;
-    // min-height: 256px;
-    // max-width: 184px;
 }
 
-.steps__card-step {}
-
 .card-step__img {
-    // width: 100%;
-    // height: 100%;
-    // background-image: url(.././img/step1.svg);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-   
-
-
-    
     margin-bottom: 21px;
     max-width: 118px;
     max-height: 128px;
-
 }
 
-
-
-
-
-.card-step__digital {}
-
 .card-step__heading {
-    
-
-    // margin-bottom: 12px;
-    // min-height: 50px;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -128,81 +60,42 @@
 }
 
 .card-step__discriptions {
-   
-    // margin-top: auto;
-    // align-items: flex-end;
-    // min-height: 60px;
-    // font-size: 15px;
     text-align: center;
     color: var(--colorWhite);
 }
 
-// .card-step__bold {
-//     font-weight: 600;
-// }
-
 .steps__wrap-btn {
     margin-top: -32px;
-    // padding: 0 55px;
     padding-bottom: 40px;
 }
 
 .steps__btn {
-    font-size: clamp(27px, 5vw, 35px); 
+    font-size: clamp(27px, 5vw, 35px);
     font-weight: 600;
     width: 100%;
     background-color: var(--colorPrimaryYellow);
     color: var(--colorBlack);
-
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
-
     transition: color, background-color .2s;
 
     &:hover,
-      &:focus {
-          background-color: var(--colorHoverBtn);
-      }
-  
-      &:active {
-          // color: var(--colorWhite);
-          background-color: var(--colorHoverBtn2);
-      }
+    &:focus {
+        background-color: var(--colorHoverBtn);
+    }
+
+    &:active {
+        background-color: var(--colorHoverBtn2);
+    }
 }
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1024px) {
     .steps__list {
-        
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 500px) {
     .steps__list {
-        
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
-
-
-
-// обрезка строк
-// display: -webkit-box;
-// -webkit-line-clamp: 3;
-// -webkit-box-orient: vertical;
-// overflow: hidden;
-
-
-
-//  это применить в сервисы перенос карточек
-// grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));

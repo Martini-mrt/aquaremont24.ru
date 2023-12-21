@@ -12,9 +12,6 @@ body {
 	padding: 0;
 }
 
-
-
-
 * {
 	padding: 0px;
 	margin: 0px;
@@ -26,14 +23,6 @@ body {
 *::after {
 	box-sizing: border-box;
 }
-
-/* Links */
-
-// a,
-// a:link,
-// a:visited {
-// 	outline: none;
-// }
 
 a {
 	text-decoration: none;
@@ -50,7 +39,6 @@ a:focus-visible {
 }
 
 /* Common */
-
 aside,
 nav,
 footer,

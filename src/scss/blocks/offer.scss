@@ -1,14 +1,9 @@
 .offer {
-    // padding-bottom: 50px;
-    padding-bottom: calc(var(--paddigBottomSections) - 24px) ;
+    padding-bottom: calc(var(--paddigBottomSections) - 24px);
     background-color: var(--colorWhite);
 }
 
-.offer__container {}
-
 .offer__box {
-    // двигаем на вверх на секцию 
-    // ! не адаптивно
     position: relative;
     z-index: 2;
     margin-top: -196px;
@@ -17,8 +12,6 @@
     justify-content: end;
     padding-right: 24px;
 }
-
-
 
 .offer__discount {
     position: relative;
@@ -37,7 +30,6 @@
     background-image: radial-gradient(at top left, var(--colorBg) 72%, var(--colorWhite) 42%);
 }
 
-
 /* Верхний левый угол */
 .offer__discount::before {
     content: "Акция";
@@ -53,10 +45,7 @@
     text-transform: uppercase;
 }
 
-
-
 .offer__discount-text {
-
     text-align: center;
     font-weight: 700;
 }
@@ -65,7 +54,6 @@
     width: 60px;
     height: 60px;
 }
-
 
 .offer__form {
     position: relative;
@@ -110,7 +98,6 @@
     &:active {
         background-color: var(--colorSecondaryBlue2);
     }
-
 }
 
 
@@ -127,15 +114,11 @@
 
 }
 
-
-
-
 @media (max-width: 600px) {
     .offer__box {
         display: flex;
         flex-direction: column;
     }
-
 
     .offer__discount {
         max-width: 100%;
@@ -152,6 +135,3 @@
         max-width: 92%;
     }
 }
-
-
-

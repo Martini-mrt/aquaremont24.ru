@@ -1,6 +1,6 @@
 .contacts {
     padding: 24px 0;
-    background-image: url('.././img/contact-bg.png');
+    background-image: url(".././img/contact-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,12 +8,9 @@
 }
 
 .contacts__list {
-    // display: flex;
-    // justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 10px;
-
 }
 
 .contacts__item {
@@ -23,45 +20,35 @@
     color: var(--colorWhite);
 }
 
-
 .contacts__img--location {
-    background:
-        url('.././img/locations.svg'),
+    background: url(".././img/locations.svg"),
         linear-gradient(var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 0%);
     background-position: center;
 }
 
 .contacts__img--time {
-    background:
-        url('.././img/time.svg'),
-        linear-gradient(var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 0%);
+    background: url(".././img/time.svg"), linear-gradient(var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 0%);
     background-position: 47% 47%;
 }
 
 .contacts__img--mail {
-    background:
-        url('.././img/mail.svg'),
-        linear-gradient(var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 0%);
+    background: url(".././img/mail.svg"), linear-gradient(var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 0%);
     background-position: 50% 31%;
 }
 
 .contacts__img--call {
-    background:
-        url('.././img/call.svg'),
-        linear-gradient(var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 0%);
+    background: url(".././img/call.svg"), linear-gradient(var(--colorPrimaryYellow) 100%, rgba(255, 255, 255, 0) 0%);
     background-position: center;
 }
 
 .contacts__link {
-    transition: color .2s;
+    transition: color 0.2s;
 
     &:hover,
     &:focus {
         color: var(--colorPrimaryYellow);
     }
 }
-
-
 
 .contacts__img {
     width: 45px;
@@ -71,8 +58,6 @@
 }
 
 .contacts__text {}
-
-
 
 @media (max-width: 1024px) {
     .contacts__list {

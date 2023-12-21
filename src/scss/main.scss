@@ -1,21 +1,10 @@
 /* Base */
 
-
-
-/* подключение стилей свайпера */
-/* @import "./../../node_modules/swiper/swiper";  */
-
-
 /* carusel */
 @import "./../../node_modules/@fancyapps/ui/dist/carousel/carousel"; 
 
-
 /* fancybox */ 
 @import "./../../node_modules/@fancyapps/ui/dist/fancybox/fancybox"; 
-
-
-
-
 
 @import "./base/reset";
 @import "./base/vars";
@@ -23,12 +12,8 @@
 @import "./base/base";
 @import "./base/utils";
 
-
-
-
 /* Blocks */
 @import "./blocks/*.scss";
-
 
 /* должен быть по слдедним что бы перебивал вес */
 @import "./base/anchor";
