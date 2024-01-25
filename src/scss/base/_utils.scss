@@ -1,6 +1,52 @@
-.none {
-	display: none !important;
+// .none {
+// 	display: none !important;
+// }
+
+
+// стили для текстового редактора Wordpress
+
+.text-processing p {
+    padding: 5px 0 5px 0;
 }
+
+.text-processing ol,
+.text-processing ul {
+    padding: 5px 40px 5px;
+}
+
+.text-processing ul {
+    list-style-type: disc;
+}
+
+.text-processing li {
+    padding-bottom: 5px;
+}
+
+.text-processing h2 {
+    padding: 5px 0 5px 0;
+    font-size: clamp(18px, 6vw, 28px); 
+    font-weight: 700;
+}
+
+.text-processing h3 {
+    padding: 5px 0 5px 0;
+    font-size: clamp(17px, 6vw, 24px); 
+    font-weight: 700;
+}
+
+.text-processing a {
+	cursor: pointer;
+	color: #ff3b00;
+	border-bottom: 1px solid #ff3b00;
+	// text-decoration: underline;
+	transition: color .2s, border-bottom .2s;
+}
+
+.text-processing a:hover {
+	color: #0607ff;
+	border-bottom: 1px solid #0607ff;
+}
+
 
 .visually-hidden {
 	position: absolute;

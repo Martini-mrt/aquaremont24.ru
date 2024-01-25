@@ -59,14 +59,14 @@
 
 .contacts__text {}
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
     .contacts__list {
         grid-template-columns: repeat(2, auto);
         gap: 32px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     .contacts__list {
         grid-template-columns: repeat(1, auto);
         gap: 18px;

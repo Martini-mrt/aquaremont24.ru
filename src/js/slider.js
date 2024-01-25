@@ -39,9 +39,11 @@ import { Fancybox } from "@fancyapps/ui";
 
 
 // init slide
-new Carousel(document.getElementById("work__slider"));
-new Carousel(document.getElementById("reviews__slider"));
+document.getElementById("work__slider") && new Carousel(document.getElementById("work__slider"))
+document.getElementById("reviews__slider") && new Carousel(document.getElementById("reviews__slider"))
 
+// new Carousel(document.getElementById("work__slider"));
+// new Carousel(document.getElementById("reviews__slider"));
 
 // init fancy
 Fancybox.bind("[data-fancybox]", {

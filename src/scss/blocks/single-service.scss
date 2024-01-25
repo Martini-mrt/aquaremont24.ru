@@ -21,30 +21,8 @@
     border-radius: 25px;
 }
 
-.single-service__text-processing {
+.single-service__text {
     //   text-indent: 4%;
-}
-
-.single-service__text-processing p {
-    padding: 5px 0 5px 0;
-}
-
-.single-service__text-processing ol,
-.single-service__text-processing ul {
-    padding-left: 40px;
-}
-
-
-.single-service__text-processing h2 {
-    padding: 10px 0 10px 0;
-    font-size: clamp(18px, 6vw, 28px); 
-    font-weight: 700;
-}
-
-.single-service__text-processing h3 {
-    padding: 10px 0 10px 0;
-    font-size: clamp(17px, 6vw, 24px); 
-    font-weight: 700;
 }
 
 @media (max-width: 650px) {
